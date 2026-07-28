@@ -386,7 +386,7 @@ const otherDirections = [
 
 const hotNotes = [
   { id: '6a63776d000000000f011804', title: '疑似来威尼斯的真正原因…', cover: 'http://sns-webpic-qc.xhscdn.com/202607282044/1f213bfce26ed57cf5fe5f678b2e341e/1040g2sg3230qabgino004bha7h9fkndojmvq3j8!nd_dft_wlteh_jpg_3' },
-  { id: '68801de8000000002400c5ea', title: 'jojo黄金风的灵感穿搭🐞 不是cos', cover: 'http://sns-webpic-qc.xhscdn.com/202607282044/9b92c2bd52e1ac341b568f59916d8245/1040g00831k8prmsoj4005ps43s127ii4roe1h88!nd_dft_wlteh_jpg_3' },
+  { id: '6a4903b6000000001702f22f', title: '当女朋友又想看JOJO立了……（日本本土版）', cover: 'http://sns-webpic-qc.xhscdn.com/202607282109/a654623bd519722b1fb4ccc28231e3be/notes_pre_post/1040g3k83226vrbq0noa05no9ehjgbg705v82sf8!nd_dft_wlteh_jpg_3' },
   { id: '6a678070000000001003d1cb', title: '当我与JOJO对上穿搭暗号（27套合集版：', cover: 'http://sns-webpic-qc.xhscdn.com/202607282044/d329d253593ccdf5cd8002af160aceb9/1040g2sg3234mrv146ueg5ocm79940l65eoeu650!nd_dft_wlteh_jpg_3' },
 ]
 
