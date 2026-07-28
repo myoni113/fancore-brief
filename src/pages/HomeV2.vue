@@ -102,10 +102,12 @@
         </div></div>
         <div class="rule-item"><span class="rule-num">4</span><div class="rule-body">
           <h4>必带话题</h4>
-          <button class="copy-hashtags" type="button" @click="copyHashtags">
-            <span v-if="copyState === 'copied'">✅ 已复制！去发布粘上吧</span>
-            <span v-else>📋 #穿搭暗号对一下 #自搭出街　点击复制</span>
-          </button>
+          <div class="copy-hashtags-wrap">
+            <button class="copy-hashtags" type="button" @click="copyHashtags">
+              <span v-if="copyState === 'copied'">✅ 已复制！去发布粘上吧</span>
+              <span v-else>📋 #穿搭暗号对一下 #自搭出街　点击复制</span>
+            </button>
+          </div>
         </div></div>
       </div>
     </section>
@@ -612,12 +614,18 @@ function fallback(text: string, done: () => void) {
 .pill-btn:hover { transform: translateY(-1px); box-shadow: 0 5px 12px rgba(214, 51, 132, .45); }
 
 .copy-hashtags {
-  display: block; margin-top: 6px;
+  display: inline-block;
+  margin-top: 6px;
   padding: 10px 16px;
   background: linear-gradient(90deg, #fff0f5, #ffe4ec);
   color: #2a1a20; font-size: .92rem; font-weight: 700;
   border: 1.5px dashed #ff6b9d; border-radius: 12px;
-  cursor: pointer; transition: all .2s; width: 100%; text-align: center;
+  cursor: pointer; transition: all .2s;
+  text-align: center;
+}
+.copy-hashtags-wrap {
+  display: flex; justify-content: flex-end;
+  margin-top: 6px;
 }
 .copy-hashtags:hover {
   background: linear-gradient(90deg, #ffe4ec, #ffd4e5); border-color: #d63384;
