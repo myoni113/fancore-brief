@@ -7,7 +7,7 @@ const isGitHubPages = window.location.hostname.includes('github.io')
 const router = createRouter({
   history: isGitHubPages ? createWebHashHistory() : createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', component: () => import('./pages/Home.vue') },
+    { path: '/', component: () => import('./pages/HomeV2.vue') },
   ],
 })
 
