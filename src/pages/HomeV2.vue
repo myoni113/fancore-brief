@@ -593,7 +593,7 @@ function fallback(text: string, done: () => void) {
   background: linear-gradient(135deg, #fff0f5, #ffe4ec);
   border-radius: 20px;
   border: 1px solid rgba(214, 51, 132, .15);
-  text-align: center;
+  text-align: left;
 }
 .intro-badge {
   display: inline-block; padding: 8px 22px;

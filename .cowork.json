@@ -4,7 +4,7 @@
   "name": "fancore-brief",
   "srcDir": "/app/~/.openclaw/workspace/cowork/fancore-brief",
   "createdAt": 1785212233586,
-  "updatedAt": 1785238463448,
+  "updatedAt": 1785238607918,
   "createdBy": "seal-agent",
   "stack": "pure-spa-vite",
   "guardCompliant": true,
@@ -28,10 +28,10 @@
     "coworkAppUrl": "https://cowork.xiaohongshu.com/app/NWEzYzFiMWE0",
     "deploymentId": 15430,
     "deploymentStatus": "RUNNING",
-    "publishedAt": 1785238463448,
+    "publishedAt": 1785238607918,
     "visibility": "SELF_ONLY",
     "rawAccessUrl": "https://cowork.xiaohongshu.com/s/b15f0478/",
-    "version": "1.0.48",
-    "lastZipHash": "sha256:6bafa727e8152401a87226b524a562ac80d03abb57f0052eae3786c7c2e33be4"
+    "version": "1.0.49",
+    "lastZipHash": "sha256:d35f85669511bc11a5e01a5336ad5c219d6427ff579a50093850c860c1f29458"
   }
 }
