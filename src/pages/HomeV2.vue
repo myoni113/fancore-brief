@@ -626,22 +626,19 @@ function fallback(text: string, done: () => void) {
   margin-bottom: 12px;
 }
 .hot-trend-chart {
-  border-radius: 12px; overflow: hidden;
-  border: 1px solid rgba(255, 184, 0, .25);
-  background: #fff;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
-  height: 100%;
-  display: flex;
-  align-items: flex-end;   /* 图贴底部——与右侧笔记卡底齐平 */
-  justify-content: center;
-  overflow: hidden;
+  border-radius: 0;                /* 去圆角 */
+  overflow: visible;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  display: block;
+  height: auto;
 }
 .hot-trend-chart img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;    /* 完整显示不裁切 */
-  object-position: bottom;
+  object-fit: contain;
 }
 .hot-trend-notes {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
