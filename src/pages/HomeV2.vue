@@ -103,8 +103,16 @@
           <h4>必带话题</h4>
           <div class="copy-hashtags-wrap">
             <button class="copy-hashtags" type="button" @click="copyHashtags">
-              <span v-if="copyState === 'copied'">✅ 已复制！去发布粘上吧</span>
-              <span v-else>📋 #穿搭暗号对一下 #自搭出街　点击复制</span>
+              <template v-if="copyState === 'copied'">
+                <span class="copy-check">✅</span>
+                <span>已复制！去发布粘上吧</span>
+              </template>
+              <template v-else>
+                <span class="copy-icon">📋</span>
+                <span class="copy-tag">#穿搭暗号对一下</span>
+                <span class="copy-tag">#自搭出街</span>
+                <span class="copy-hint">点击复制</span>
+              </template>
             </button>
           </div>
         </div></div>
@@ -613,14 +621,28 @@ function fallback(text: string, done: () => void) {
 .pill-btn:hover { transform: translateY(-1px); box-shadow: 0 5px 12px rgba(214, 51, 132, .45); }
 
 .copy-hashtags {
-  display: inline-block;
+  display: inline-flex; align-items: center; gap: 8px;
   margin-top: 6px;
-  padding: 10px 16px;
-  background: linear-gradient(90deg, #fff0f5, #ffe4ec);
+  padding: 8px 14px;
+  background: linear-gradient(90deg, #fff5f8, #fff0f5);
   color: #2a1a20; font-size: .92rem; font-weight: 700;
   border: 1.5px dashed #ff6b9d; border-radius: 12px;
   cursor: pointer; transition: all .2s;
-  text-align: center;
+}
+.copy-hashtags .copy-icon { font-size: 1rem; }
+.copy-hashtags .copy-check { font-size: 1rem; }
+.copy-hashtags .copy-tag {
+  display: inline-block;
+  padding: 3px 12px;
+  background: #ffe4ec;
+  color: #d63384;
+  border-radius: 999px;
+  font-size: .82rem; font-weight: 700;
+  border: 1px solid #ffc9dc;
+}
+.copy-hashtags .copy-hint {
+  color: #d63384; font-size: .85rem; font-weight: 700;
+  margin-left: 2px;
 }
 .copy-hashtags-wrap {
   display: flex; justify-content: flex-start;
