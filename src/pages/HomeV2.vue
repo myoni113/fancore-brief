@@ -19,7 +19,7 @@
       <span class="dot"></span><span class="line"></span><span class="dot big"></span><span class="line"></span><span class="dot"></span>
     </div>
 
-    <!-- Hero: 左右分栏 + 官宣笔记也放这里 -->
+    <!-- Hero -->
     <section id="intro" class="hero-split">
       <div class="hero-left">
         <span class="hero-tag">#穿搭暗号对一下 · #fancore</span>
@@ -39,7 +39,6 @@
             填写返稿投流表
           </a>
         </div>
-        <!-- 官宣笔记 · Intro 内部 -->
         <a class="official-inline"
            href="https://www.xiaohongshu.com/explore/6a5624c8000000001101e173" target="_blank">
           <div class="official-inline-cover"><img :src="officialCover" alt="官宣笔记"/></div>
@@ -59,7 +58,7 @@
       </div>
     </section>
 
-    <!-- Section 01: 活动规则 -->
+    <!-- Section 01 -->
     <section id="rules" class="section">
       <header class="section-head">
         <div class="head-badge"><span class="badge-num">01</span></div>
@@ -71,52 +70,37 @@
       </header>
 
       <div class="rule-list">
-        <div class="rule-item">
-          <span class="rule-num">1</span>
-          <div class="rule-body">
-            <h4>📮 返稿投流</h4>
-            <p>发布后<b>务必填写</b>返稿投流链接，薯薯会定期回扫，持续投流。</p>
+        <div class="rule-item"><span class="rule-num">1</span><div class="rule-body">
+          <h4>📮 返稿投流</h4>
+          <p>发布后<b>务必填写</b>返稿投流链接，薯薯会定期回扫，持续投流。</p>
+        </div></div>
+        <div class="rule-item"><span class="rule-num">2</span><div class="rule-body">
+          <h4>活动主题</h4>
+          <p>与「fancore 穿搭」相关，分享如何根据喜欢的 ta 发散灵感演绎穿搭。</p>
+        </div></div>
+        <div class="rule-item"><span class="rule-num">3</span><div class="rule-body">
+          <h4>活动时间</h4>
+          <p>即日起 — <b>9 月 15 日</b></p>
+        </div></div>
+        <div class="rule-item"><span class="rule-num">4</span><div class="rule-body">
+          <h4>标题正文</h4>
+          <p>推荐出现<b>人物角色 / 动漫名 + 穿搭相关关键词</b>。</p>
+        </div></div>
+        <div class="rule-item"><span class="rule-num">5</span><div class="rule-body">
+          <h4>必带话题</h4>
+          <div class="tags-inline">
+            <span class="tag-pill">#穿搭暗号对一下</span>
+            <span class="tag-pill">#fancore</span>
           </div>
-        </div>
-        <div class="rule-item">
-          <span class="rule-num">2</span>
-          <div class="rule-body">
-            <h4>活动主题</h4>
-            <p>与「fancore 穿搭」相关，分享如何根据喜欢的 ta 发散灵感演绎穿搭。</p>
-          </div>
-        </div>
-        <div class="rule-item">
-          <span class="rule-num">3</span>
-          <div class="rule-body">
-            <h4>活动时间</h4>
-            <p>即日起 — <b>9 月 15 日</b></p>
-          </div>
-        </div>
-        <div class="rule-item">
-          <span class="rule-num">4</span>
-          <div class="rule-body">
-            <h4>标题正文</h4>
-            <p>推荐出现<b>人物角色 / 动漫名 + 穿搭相关关键词</b>。</p>
-          </div>
-        </div>
-        <div class="rule-item">
-          <span class="rule-num">5</span>
-          <div class="rule-body">
-            <h4>必带话题</h4>
-            <div class="tags-inline">
-              <span class="tag-pill">#穿搭暗号对一下</span>
-              <span class="tag-pill">#fancore</span>
-            </div>
-            <button class="copy-hashtags" type="button" @click="copyHashtags">
-              <span v-if="copyState === 'copied'">✅ 已复制！去发布粘上吧</span>
-              <span v-else>📋 #穿搭暗号对一下 #fancore　点击复制</span>
-            </button>
-          </div>
-        </div>
+          <button class="copy-hashtags" type="button" @click="copyHashtags">
+            <span v-if="copyState === 'copied'">✅ 已复制！去发布粘上吧</span>
+            <span v-else>📋 #穿搭暗号对一下 #fancore　点击复制</span>
+          </button>
+        </div></div>
       </div>
     </section>
 
-    <!-- 🚨 主推方向 hot banner（白 + 粉阴影）-->
+    <!-- 🚨 -->
     <section class="hot-banner">
       <span class="hot-icon">🚨</span>
       <span class="hot-text">主推方向：动漫人物 × 真人同框！投稿即得大量流量！</span>
@@ -147,20 +131,14 @@
           <img :src="patternVisual" alt="同框结构示例" class="pattern-visual-img"/>
         </div>
         <ol class="pattern-steps">
-          <li>
-            <span class="step-num">1</span>
-            <div>
-              <h5>封面动漫真人同框</h5>
-              <p>将灵感来源的动漫人物贴在封面上</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-num">2</span>
-            <div>
-              <h5>2.5 次元灵感穿搭</h5>
-              <p>提取动漫角色的<b>标志性配色 / 单品</b>，是灵感锚点</p>
-            </div>
-          </li>
+          <li><span class="step-num">1</span><div>
+            <h5>封面动漫真人同框</h5>
+            <p>将灵感来源的动漫人物贴在封面上</p>
+          </div></li>
+          <li><span class="step-num">2</span><div>
+            <h5>2.5 次元灵感穿搭</h5>
+            <p>提取动漫角色的<b>标志性配色 / 单品</b>，是灵感锚点</p>
+          </div></li>
         </ol>
       </div>
 
@@ -172,8 +150,7 @@
       </div>
       <div class="notes-row-5">
         <a v-for="n in notes.presentation" :key="n.id"
-           :href="`https://www.xiaohongshu.com/explore/${n.id}`" target="_blank"
-           class="mini-note">
+           :href="buildNoteUrl(n)" target="_blank" class="mini-note">
           <div class="mini-cover">
             <img v-if="n.localCover || n.cover" :src="n.localCover || proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
             <span v-else class="fallback">📖</span>
@@ -191,45 +168,25 @@
           <h2 class="section-title">Core</h2>
           <span class="section-en">03 · CORE STYLES</span>
         </div>
-        <p class="section-sub">从九大 IP 灵感出发，你的 fancore 可以变成——</p>
+        <p class="section-sub">你的 fancore 可以变成——</p>
       </header>
 
-      <!-- 焦点 -->
       <h3 class="sub-heading">
-        <span class="sub-heading-num">1.</span> 焦点展示 · JOJOcore
+        <span class="sub-heading-num">1.</span> 主推 core
       </h3>
-      <a class="outfit-hero-card"
-         :href="`https://www.xiaohongshu.com/explore/${jojoFeatured.id}`"
-         target="_blank">
-        <div class="hero-card-cover">
-          <img :src="jojocoreFeatured" :alt="jojoFeatured.title" loading="lazy"/>
-          <div class="hero-card-overlay">
-            <div class="hero-card-badge">FEATURED</div>
-            <div class="hero-card-content">
-              <h3>JOJOcore</h3>
-              <p class="hero-card-sub">JOJO 的奇妙冒险风格 · 立式扭胯 + 亮色搭配</p>
-              <p class="hero-card-note">📖 {{ clean(jojoFeatured.title) }}</p>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <!-- 平铺所有其他 core -->
-      <h3 class="sub-heading" style="margin-top: 26px">
-        <span class="sub-heading-num">2.</span> 其他 core · 灵感笔记
-      </h3>
-      <div class="core-grid">
-        <div v-for="core in allCores" :key="core.key" class="core-block">
+      <!-- Row 1: JOJOcore + 奈奈core -->
+      <div class="core-row-2">
+        <div v-for="core in row1Cores" :key="core.key" class="core-block">
           <div class="core-tag" :style="{background: core.gradient, color: core.color || '#fff'}">
             <span class="core-tag-name">{{ core.name }}</span>
             <span class="core-tag-desc">{{ core.desc }}</span>
           </div>
           <div class="core-notes-2col">
             <a v-for="n in (notes[core.key] || [])" :key="n.id"
-               :href="`https://www.xiaohongshu.com/explore/${n.id}`" target="_blank"
-               class="mini-note">
+               :href="buildNoteUrl(n)" target="_blank" class="mini-note">
               <div class="mini-cover">
-                <img v-if="n.cover" :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
+                <img v-if="n.useLocalCover === 'fancore1'" :src="fancore1" :alt="clean(n.title)" loading="lazy"/>
+                <img v-else-if="n.cover" :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
                 <span v-else class="fallback">📖</span>
               </div>
               <p class="mini-title">{{ clean(n.title) }}</p>
@@ -237,9 +194,29 @@
           </div>
         </div>
       </div>
+
+      <!-- Row 2: NANA + 鬼灭 + HxH + Kitty -->
+      <h3 class="sub-heading" style="margin-top: 26px">
+        <span class="sub-heading-num">2.</span> 更多 core 风格
+      </h3>
+      <div class="core-row-4">
+        <div v-for="core in row2Cores" :key="core.key" class="core-mini-block">
+          <div class="core-tag mini" :style="{background: core.gradient, color: core.color || '#fff'}">
+            <span class="core-tag-name">{{ core.name }}</span>
+          </div>
+          <a v-for="n in (notes[core.key] || [])" :key="n.id"
+             :href="buildNoteUrl(n)" target="_blank" class="mini-note">
+            <div class="mini-cover">
+              <img v-if="n.cover" :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
+              <span v-else class="fallback">📖</span>
+            </div>
+            <p class="mini-title">{{ clean(n.title) }}</p>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- Section 04: 其他 -->
+    <!-- Section 04 -->
     <section id="others" class="section">
       <header class="section-head">
         <div class="head-badge"><span class="badge-num">04</span></div>
@@ -259,8 +236,7 @@
 
       <div class="notes-row-3">
         <a v-for="n in notes.other" :key="n.id"
-           :href="`https://www.xiaohongshu.com/explore/${n.id}`" target="_blank"
-           class="mini-note">
+           :href="buildNoteUrl(n)" target="_blank" class="mini-note">
           <div class="mini-cover">
             <img v-if="n.cover" :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
             <span v-else class="fallback">📖</span>
@@ -283,18 +259,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import notesMeta from '../notes-meta.json'
-import heroBg from '../assets/hero-bg.webp'
 import fancore1 from '../assets/fancore-1.webp'
 import patternVisual from '../assets/pattern-visual.webp'
-import jojocoreFeatured from '../assets/jojocore-featured.webp'
 
 const raw = notesMeta as Record<string, any[]>
 const notes: Record<string, any[]> = JSON.parse(JSON.stringify(raw))
 if (notes.presentation && notes.presentation[0] && !notes.presentation[0].cover) {
   notes.presentation[0].localCover = fancore1
 }
-
-const jojoFeatured = notes.JOJOcore.find((n: any) => n.id === '6a63776d000000000f011804') || notes.JOJOcore[0]
 
 const officialCover = 'https://wsrv.nl/?url=' +
   encodeURIComponent('sns-webpic-qc.xhscdn.com/202607281333/7892aa9f579912de224e697962759ca4/spectrum/1040g34o32348rpj4n01g44n3shqsuc7rlj3ojv0!nd_dft_wlteh_jpg_3') +
@@ -305,44 +277,46 @@ const proxied = (url: string) => url
   ? `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ''))}&w=500&we&output=webp`
   : ''
 
-const allCores = [
-  { key: '奈奈core',       name: '奈奈core',       desc: '蕾丝 + 泡泡短裤 + 小腿袜', gradient: 'linear-gradient(135deg,#ff8fb1,#ff5c8a)' },
-  { key: 'NANAcore',       name: 'NANAcore',       desc: '红色格纹裙 + 朋克',       gradient: 'linear-gradient(135deg,#ffe0eb,#ffb3c6)', color: '#8a3a5c' },
-  { key: '迪士尼core',     name: '迪士尼core',     desc: '迪士尼公主 / 反派风格',    gradient: 'linear-gradient(135deg,#ffd6e0,#ffb3c6)', color: '#8a3a5c' },
-  { key: '飞天小女警core', name: '飞天小女警core', desc: '毛毛 / 花花 / 泡泡',        gradient: 'linear-gradient(135deg,#c8f7d4,#ffe0eb)', color: '#3a5a2d' },
-  { key: '鬼灭core',       name: '鬼灭core',       desc: '鬼灭之刃角色配色',        gradient: 'linear-gradient(135deg,#ff9a9e,#fecfef)', color: '#663' },
-  { key: 'HxHcore',        name: 'HxHcore',        desc: '全职猎人幻影旅团',        gradient: 'linear-gradient(135deg,#d1c4e9,#f8bbd0)', color: '#5a3a7a' },
-  { key: 'Kittycore',      name: 'Kittycore',      desc: 'Hello Kitty 元素',       gradient: 'linear-gradient(135deg,#fbc2eb,#ffb6c1)', color: '#8a3a5c' },
-  { key: 'TOYcore',        name: 'TOYcore',        desc: '玩具总动员风格',          gradient: 'linear-gradient(135deg,#ffecd2,#ffb6c1)', color: '#8a3a5c' },
+const buildNoteUrl = (n: any) => {
+  const base = `https://www.xiaohongshu.com/explore/${n.id}`
+  if (n.token) {
+    const p = new URLSearchParams({ xsec_token: n.token, xsec_source: n.source || 'pc_search' })
+    return `${base}?${p.toString()}`
+  }
+  return base
+}
+
+// Row 1: JOJO + 奈奈 —— 一行 2 列，每个 2 篇
+const row1Cores = [
+  { key: 'JOJOcore', name: 'JOJOcore', desc: 'JOJO 的奇妙冒险风格',       gradient: 'linear-gradient(135deg,#ffb3d9,#c48bd9)' },
+  { key: '奈奈core', name: '奈奈core', desc: '蕾丝 + 泡泡短裤 + 小腿袜',   gradient: 'linear-gradient(135deg,#ff8fb1,#ff5c8a)' },
+]
+// Row 2: NANA + 鬼灭 + HxH + Kitty —— 一行 4 列
+const row2Cores = [
+  { key: 'NANAcore',  name: 'NANAcore',  gradient: 'linear-gradient(135deg,#ffe0eb,#ffb3c6)', color: '#8a3a5c' },
+  { key: '鬼灭core',  name: '鬼灭core',  gradient: 'linear-gradient(135deg,#ff9a9e,#fecfef)', color: '#663' },
+  { key: 'HxHcore',   name: 'HxHcore',   gradient: 'linear-gradient(135deg,#d1c4e9,#f8bbd0)', color: '#5a3a7a' },
+  { key: 'Kittycore', name: 'Kittycore', gradient: 'linear-gradient(135deg,#fbc2eb,#ffb6c1)', color: '#8a3a5c' },
 ]
 
 const copyState = ref<'idle' | 'copied'>('idle')
 function copyHashtags() {
   const text = '#穿搭暗号对一下 #fancore'
-  const done = () => {
-    copyState.value = 'copied'
-    setTimeout(() => (copyState.value = 'idle'), 2000)
-  }
+  const done = () => { copyState.value = 'copied'; setTimeout(() => (copyState.value = 'idle'), 2000) }
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(text).then(done).catch(() => fallback(text, done))
-  } else {
-    fallback(text, done)
-  }
+  } else { fallback(text, done) }
 }
 function fallback(text: string, done: () => void) {
   const ta = document.createElement('textarea')
-  ta.value = text
-  ta.style.position = 'fixed'
-  ta.style.opacity = '0'
-  document.body.appendChild(ta)
-  ta.select()
+  ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0'
+  document.body.appendChild(ta); ta.select()
   try { document.execCommand('copy'); done() } catch { /* noop */ }
   document.body.removeChild(ta)
 }
 </script>
 
 <style scoped>
-/* Fancore V2 · 淡粉波点主题 */
 .page-v2 {
   min-height: 100vh;
   color: #2a1a20;
@@ -355,14 +329,12 @@ function fallback(text: string, done: () => void) {
   background-size: 26px 26px, 100% 100%;
 }
 
-/* 顶部胶囊导航（居中） */
 .topnav {
   max-width: 980px; margin: 20px auto; padding: 10px 20px;
   display: flex; align-items: center; gap: 22px;
   background: rgba(255, 253, 249, .86);
   border: 1px solid rgba(214, 51, 132, .18);
-  border-radius: 999px;
-  backdrop-filter: blur(10px);
+  border-radius: 999px; backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(214, 51, 132, .08);
   font-size: .92rem; position: sticky; top: 10px; z-index: 10;
   justify-content: center;
@@ -381,7 +353,6 @@ function fallback(text: string, done: () => void) {
   border-radius: 999px; font-weight: 700; margin-left: auto;
 }
 
-/* 装饰分隔线 */
 .deco-line {
   max-width: 980px; margin: 30px auto 20px;
   display: flex; align-items: center; gap: 8px; padding: 0 60px;
@@ -392,7 +363,6 @@ function fallback(text: string, done: () => void) {
 .deco-line .dot.big { width: 14px; height: 14px; background: #d63384; }
 .deco-line .dot.red { background: #d63384; }
 
-/* Hero */
 .hero-split {
   max-width: 980px; margin: 20px auto 40px;
   padding: 44px 48px;
@@ -420,7 +390,6 @@ function fallback(text: string, done: () => void) {
 .btn-ghost { background: #fff; color: #d63384 !important; border: 1.5px solid #ffc9dc; }
 .btn-ghost:hover { background: #fff0f5; }
 
-/* 官宣笔记 · Intro 内嵌 */
 .official-inline {
   display: flex; align-items: center; gap: 12px;
   padding: 10px 14px;
@@ -431,13 +400,16 @@ function fallback(text: string, done: () => void) {
   transition: all .2s;
 }
 .official-inline:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(255, 107, 157, .3); }
-.official-inline-cover {
-  flex: 0 0 42px; aspect-ratio: 3 / 4;
-  border-radius: 6px; overflow: hidden; background: #f0e0e8;
-}
+.official-inline-cover { flex: 0 0 42px; aspect-ratio: 3 / 4; border-radius: 6px; overflow: hidden; background: #f0e0e8; }
 .official-inline-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .official-inline-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .official-inline-title { margin: 0; font-size: .88rem; font-weight: 700; color: #2a1a20; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.official-tag {
+  align-self: flex-start;
+  padding: 3px 10px; background: #fff; color: #d63384;
+  border: 1px solid #ff6b9d; border-radius: 999px;
+  font-size: .78rem; font-weight: 700;
+}
 .official-inline-cta { color: #d63384; font-weight: 700; font-size: .82rem; white-space: nowrap; }
 
 .hero-right { display: flex; align-items: center; justify-content: center; }
@@ -451,7 +423,6 @@ function fallback(text: string, done: () => void) {
 .phone-cover { width: 100%; height: 100%; object-fit: cover; display: block; }
 .phone-badge { position: absolute; top: 30px; right: 8px; padding: 4px 10px; background: rgba(255, 107, 157, .95); color: #fff; border-radius: 999px; font-size: .7rem; font-weight: 700; z-index: 3; }
 
-/* Section */
 .section {
   max-width: 980px; margin: 44px auto; padding: 32px 30px;
   background: rgba(255, 253, 249, .82);
@@ -479,7 +450,6 @@ function fallback(text: string, done: () => void) {
 .section-en { font-size: .72rem; color: #b48090; letter-spacing: .18em; margin-top: 2px; }
 .section-sub { font-size: .9rem; color: #7a5a68; margin: 0; text-align: right; grid-column: 3; }
 
-/* 子小标题 */
 .sub-heading {
   display: flex; align-items: baseline; gap: 8px;
   margin: 22px 0 10px; padding-left: 12px;
@@ -488,7 +458,6 @@ function fallback(text: string, done: () => void) {
 }
 .sub-heading-num { color: #d63384; font-weight: 900; }
 
-/* rules */
 .rule-list { display: flex; flex-direction: column; gap: 10px; }
 .rule-item {
   display: flex; align-items: flex-start; gap: 16px;
@@ -509,7 +478,6 @@ function fallback(text: string, done: () => void) {
 .tags-inline { display: inline-flex; gap: 8px; margin-right: 12px; }
 .tag-pill { padding: 3px 12px; background: #ffe4ec; color: #d63384; border-radius: 999px; font-size: .82rem; font-weight: 700; }
 
-/* 复制话题 */
 .copy-hashtags {
   display: block; margin-top: 10px;
   padding: 10px 16px;
@@ -524,25 +492,17 @@ function fallback(text: string, done: () => void) {
 }
 .copy-hashtags:active { transform: translateY(0); }
 
-/* 🚨 hot banner — 白底 + 粉红发光阴影 */
 .hot-banner {
   max-width: 980px; margin: 16px auto; padding: 16px 22px;
   display: flex; align-items: center; gap: 12px;
-  background: #ffffff;
-  color: #2a1a20;
-  border: 2px solid #ff6b9d;
-  border-radius: 14px;
+  background: #ffffff; color: #2a1a20;
+  border: 2px solid #ff6b9d; border-radius: 14px;
   font-weight: 700; font-size: 1rem;
-  box-shadow: 0 6px 24px rgba(255, 45, 130, .5),
-              0 0 0 4px rgba(255, 45, 130, .12);
+  box-shadow: 0 6px 24px rgba(255, 45, 130, .5), 0 0 0 4px rgba(255, 45, 130, .12);
 }
-.hot-icon {
-  font-size: 1.5rem;
-  filter: drop-shadow(0 2px 4px rgba(255, 45, 130, .55));
-}
+.hot-icon { font-size: 1.5rem; filter: drop-shadow(0 2px 4px rgba(255, 45, 130, .55)); }
 .hot-text { flex: 1; }
 
-/* pattern */
 .pattern-tabs { display: flex; gap: 10px; margin-bottom: 16px; }
 .pattern-tab { padding: 6px 16px; background: rgba(255, 107, 157, .12); color: #d63384; border: 1px solid #ffc9dc; border-radius: 999px; font-size: .85rem; font-weight: 700; }
 .pattern-tab.active { background: #d63384; color: #fff; border-color: transparent; }
@@ -570,11 +530,9 @@ function fallback(text: string, done: () => void) {
 .pattern-steps h5 { margin: 0 0 4px; font-size: 1rem; color: #2a1a20; font-weight: 700; }
 .pattern-steps p { margin: 0; font-size: .88rem; color: #4a3540; line-height: 1.6; }
 .pattern-steps b { color: #d63384; }
-
 .pattern-footer { margin: 16px 0 8px; text-align: center; }
 .footer-hint { font-size: .82rem; color: #7a5a68; }
 
-/* notes grids */
 .notes-row-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
 .notes-row-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
 .mini-note {
@@ -588,36 +546,8 @@ function fallback(text: string, done: () => void) {
 .fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #bbb; }
 .mini-title { margin: 0; padding: 8px 10px 10px; font-size: .82rem; line-height: 1.35; color: #2a1a20; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 40px; }
 
-/* JOJOcore 焦点大封面 */
-.outfit-hero-card {
-  display: block; margin-bottom: 22px;
-  border-radius: 18px; overflow: hidden;
-  text-decoration: none; color: inherit;
-  box-shadow: 0 8px 24px rgba(196, 139, 217, .25);
-  transition: all .2s;
-}
-.outfit-hero-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(196, 139, 217, .4); }
-.hero-card-cover { position: relative; aspect-ratio: 16 / 9; overflow: hidden; }
-.hero-card-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.hero-card-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.65) 100%);
-  padding: 22px 26px; color: #fff;
-  display: flex; flex-direction: column; justify-content: space-between;
-}
-.hero-card-badge {
-  align-self: flex-start; padding: 4px 12px;
-  background: rgba(255, 255, 255, .3); backdrop-filter: blur(8px);
-  border-radius: 999px; font-size: .72rem; font-weight: 800; letter-spacing: .1em;
-}
-.hero-card-content h3 { font-size: 2.4rem; font-weight: 900; margin: 0 0 8px; text-shadow: 0 2px 12px rgba(0,0,0,.55); line-height: 1.15; letter-spacing: .02em; }
-.hero-card-content .hero-card-sub { margin: 0 0 6px; font-size: .92rem; opacity: .95; font-weight: 600; }
-.hero-card-content .hero-card-note { margin: 0; font-size: .78rem; opacity: .85; font-weight: 400; }
-
-/* 平铺其他 core */
-.core-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
-}
+/* Row 1: 2 列 */
+.core-row-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .core-block {
   background: rgba(255, 240, 245, .35);
   border-radius: 16px; padding: 16px;
@@ -631,12 +561,20 @@ function fallback(text: string, done: () => void) {
 }
 .core-tag-name { font-weight: 700; font-size: 1rem; }
 .core-tag-desc { font-size: .78rem; opacity: .95; }
-.core-notes-2col {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+.core-notes-2col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+
+/* Row 2: 4 列 */
+.core-row-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.core-mini-block {
+  display: flex; flex-direction: column; gap: 10px;
+  background: rgba(255, 240, 245, .35);
+  border-radius: 14px; padding: 12px;
+  border: 1px solid rgba(214, 51, 132, .1);
 }
+.core-tag.mini { padding: 4px 10px; gap: 4px; align-self: flex-start; }
+.core-tag.mini .core-tag-name { font-size: .88rem; }
 
 .other-list-v2 { margin: 12px 0; padding: 0 0 0 20px; font-size: .95rem; line-height: 1.9; color: #4a3540; }
-
 .footer-v2 { text-align: center; padding: 24px 20px; color: #7a5a68; }
 .footer-v2 p { margin: 4px 0; font-size: 1rem; font-weight: 700; }
 .footer-v2 .footer-sub { font-size: .82rem; color: #b48090; font-weight: 400; }
@@ -646,11 +584,11 @@ function fallback(text: string, done: () => void) {
   .hero-split { grid-template-columns: 1fr; padding: 30px 24px; }
   .hero-title { font-size: 2rem; }
   .pattern-card { grid-template-columns: 1fr; }
-  .core-grid { grid-template-columns: 1fr; }
+  .core-row-2 { grid-template-columns: 1fr; }
+  .core-row-4 { grid-template-columns: repeat(2, 1fr); }
   .notes-row-5 { grid-template-columns: repeat(2, 1fr); }
   .notes-row-3 { grid-template-columns: 1fr; }
   .section-head { grid-template-columns: auto 1fr; }
   .section-sub { grid-column: 1 / -1; text-align: left; }
-  .hero-card-content h3 { font-size: 1.6rem; }
 }
 </style>
