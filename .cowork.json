@@ -1,0 +1,34 @@
+{
+  "schema": "cowork-project/v1",
+  "id": "cw_proj_d0682c03-53a",
+  "name": "fancore-brief",
+  "srcDir": "/app/~/.openclaw/workspace/cowork/fancore-brief",
+  "createdAt": 1785212233586,
+  "updatedAt": 1785212540849,
+  "createdBy": "seal-agent",
+  "stack": "pure-spa-vite",
+  "guardCompliant": true,
+  "chatSessionId": "brief-25d-web",
+  "pack": {
+    "keep": [
+      "dist"
+    ]
+  },
+  "devConfig": {
+    "preStart": [
+      "test -d node_modules/vite || NODE_ENV=development npm install --silent --include=dev --registry=http://registry.npmmirror.com"
+    ],
+    "run": "npm run dev -- --host 0.0.0.0 --port ${PORT}"
+  },
+  "cowork": {
+    "workId": 122761,
+    "appId": "b15f0478",
+    "alias": "fancore-brief",
+    "accessUrl": "https://cowork.xiaohongshu.com/s/fancore-brief",
+    "coworkAppUrl": "https://cowork.xiaohongshu.com/app/NWEzYzFiMWE0",
+    "deploymentId": 15430,
+    "deploymentStatus": "RUNNING",
+    "publishedAt": 1785212540849,
+    "visibility": "SELF_ONLY"
+  }
+}
