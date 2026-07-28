@@ -427,7 +427,11 @@ function fallback(text: string, done: () => void) {
   font-size: .92rem; position: sticky; top: 10px; z-index: 10;
   justify-content: center;
 }
-.topnav .brand { display: flex; align-items: center; gap: 8px; font-weight: 800; color: #7c3aed; margin-right: auto; }
+.topnav .brand {
+  display: flex; align-items: center; gap: 8px;
+  font-weight: 800; color: #7c3aed;
+  position: absolute; left: 20px;
+}
 .brand-badge {
   width: 28px; height: 28px;
   background: linear-gradient(135deg, #8b5cf6, #7c3aed);
