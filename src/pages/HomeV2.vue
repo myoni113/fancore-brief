@@ -90,11 +90,11 @@
           <h4>必带话题</h4>
           <div class="tags-inline">
             <span class="tag-pill">#穿搭暗号对一下</span>
-            <span class="tag-pill">#fancore</span>
+            <span class="tag-pill">#自搭出街</span>
           </div>
           <button class="copy-hashtags" type="button" @click="copyHashtags">
             <span v-if="copyState === 'copied'">✅ 已复制！去发布粘上吧</span>
-            <span v-else>📋 #穿搭暗号对一下 #fancore　点击复制</span>
+            <span v-else>📋 #穿搭暗号对一下 #自搭出街　点击复制</span>
           </button>
         </div></div>
       </div>
@@ -326,7 +326,7 @@ const row2Cores = [
 
 const copyState = ref<'idle' | 'copied'>('idle')
 function copyHashtags() {
-  const text = '#穿搭暗号对一下 #fancore'
+  const text = '#穿搭暗号对一下 #自搭出街'
   const done = () => { copyState.value = 'copied'; setTimeout(() => (copyState.value = 'idle'), 2000) }
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(text).then(done).catch(() => fallback(text, done))
