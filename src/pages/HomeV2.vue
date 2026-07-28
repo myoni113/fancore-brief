@@ -112,12 +112,6 @@
       </div>
     </section>
 
-    <!-- 🚨 -->
-    <section class="hot-banner">
-      <span class="hot-icon">🚨</span>
-      <span class="hot-text">主推方向：动漫人物 × 真人同框！投稿即得大量流量！</span>
-    </section>
-
     <!-- ────── 三、主推内容方向 #AGCcore ────── -->
     <section id="agccore" class="section">
       <header class="section-head">
@@ -127,6 +121,12 @@
           <span class="section-en">CHAPTER 3 · AGCCORE</span>
         </div>
       </header>
+
+      <!-- 🚨 hot banner - 章三内部 -->
+      <div class="hot-banner hot-banner-inline">
+        <span class="hot-icon">🚨</span>
+        <span class="hot-text">主推方向：动漫人物 × 真人同框！投稿即得大量流量！</span>
+      </div>
 
       <!-- 什么是 AGCcore -->
       <div class="what-is-card">
@@ -639,6 +639,9 @@ function fallback(text: string, done: () => void) {
   border: 2px solid #ff6b9d; border-radius: 14px;
   font-weight: 700; font-size: 1rem;
   box-shadow: 0 6px 24px rgba(255, 45, 130, .5), 0 0 0 4px rgba(255, 45, 130, .12);
+}
+.hot-banner.hot-banner-inline {
+  max-width: none; margin: 0 0 22px;
 }
 .hot-icon { font-size: 1.5rem; filter: drop-shadow(0 2px 4px rgba(255, 45, 130, .55)); }
 .hot-text { flex: 1; }
