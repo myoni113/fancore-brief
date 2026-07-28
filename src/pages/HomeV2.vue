@@ -72,6 +72,28 @@
       </div>
     </section>
 
+    <!-- 🔥 热点上榜 — 一、与二之间 -->
+    <section class="hot-trend">
+      <div class="hot-trend-head">
+        <span class="hot-trend-badge">🚨 目前内容热度正飞速趿升中</span>
+        <h3 class="hot-trend-title">7.25 热点上榜</h3>
+      </div>
+      <div class="hot-trend-chart">
+        <img :src="hotTrend" alt="热度趋势" loading="lazy"/>
+      </div>
+      <div class="hot-trend-notes-title">🔥 爆款笔记</div>
+      <div class="hot-trend-notes">
+        <a v-for="n in hotNotes" :key="n.id"
+           :href="`https://www.xiaohongshu.com/explore/${n.id}`" target="_blank"
+           class="mini-note">
+          <div class="mini-cover">
+            <img :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
+          </div>
+          <p class="mini-title">{{ clean(n.title) }}</p>
+        </a>
+      </div>
+    </section>
+
     <!-- ────── 二、参与方式 ────── -->
     <section id="join" class="section">
       <header class="section-head">
@@ -319,6 +341,7 @@ import jojocoreFeatured from '../assets/jojocore-featured.webp'
 import patternA from '../assets/pattern-a.webp'
 import patternB from '../assets/pattern-b.webp'
 import patternC from '../assets/pattern-c.webp'
+import hotTrend from '../assets/hot-trend.webp'
 
 const raw = notesMeta as Record<string, any[]>
 const notes: Record<string, any[]> = JSON.parse(JSON.stringify(raw))
@@ -355,6 +378,12 @@ const otherDirections = [
   { key: 'dir-otaku',     icon: '🎧', name: '阿宅现生怎么穿' },
 ]
 
+const hotNotes = [
+  { id: '6a63776d000000000f011804', title: '疑似来威尼斯的真正原因…', cover: 'http://sns-webpic-qc.xhscdn.com/202607282044/1f213bfce26ed57cf5fe5f678b2e341e/1040g2sg3230qabgino004bha7h9fkndojmvq3j8!nd_dft_wlteh_jpg_3' },
+  { id: '68801de8000000002400c5ea', title: 'jojo黄金风的灵感穿搭🐞 不是cos', cover: 'http://sns-webpic-qc.xhscdn.com/202607282044/9b92c2bd52e1ac341b568f59916d8245/1040g00831k8prmsoj4005ps43s127ii4roe1h88!nd_dft_wlteh_jpg_3' },
+  { id: '6a678070000000001003d1cb', title: '当我与JOJO对上穿搭暗号（27套合集版：', cover: 'http://sns-webpic-qc.xhscdn.com/202607282044/d329d253593ccdf5cd8002af160aceb9/1040g2sg3234mrv146ueg5ocm79940l65eoeu650!nd_dft_wlteh_jpg_3' },
+]
+
 const officialCover = 'https://wsrv.nl/?url=' +
   encodeURIComponent('sns-webpic-qc.xhscdn.com/202607281333/7892aa9f579912de224e697962759ca4/spectrum/1040g34o32348rpj4n01g44n3shqsuc7rlj3ojv0!nd_dft_wlteh_jpg_3') +
   '&w=400&we&output=webp'
@@ -377,8 +406,8 @@ const row1Cores = [
   { key: '奈奈core', name: '奈奈core', desc: '蕾丝 + 泡泡短裤 + 小腿袜',   gradient: 'linear-gradient(135deg,#C793C1,#B979B1)' },
 ]
 const row1bCores = [
-  { key: '迪士尼core',      name: '迪士尼core',      desc: '迪士尼公主 / 反派风格',   gradient: 'linear-gradient(135deg,#EDD3E8,#DDB5D8)', color: '#7A4574' },
-  { key: '飞天小女警core', name: '飞天小女警core', desc: '毛毛 / 花花 / 泡泡三色配',   gradient: 'linear-gradient(135deg,#c8f7d4,#EDD3E8)', color: '#3a5a2d' },
+  { key: '迪士尼core',      name: 'Disneycore',      desc: '迪士尼公主 / 反派风格',   gradient: 'linear-gradient(135deg,#EDD3E8,#DDB5D8)', color: '#7A4574' },
+  { key: '飞天小女警core', name: '毛毛core', desc: '飞天小女警——毛毛 / 花花 / 泡泡三色上身',   gradient: 'linear-gradient(135deg,#c8f7d4,#EDD3E8)', color: '#3a5a2d' },
 ]
 const row2Cores = [
   { key: 'NANAcore',  name: 'NANAcore',  gradient: 'linear-gradient(135deg,#EDD3E8,#DDB5D8)', color: '#7A4574' },
@@ -544,6 +573,56 @@ function fallback(text: string, done: () => void) {
 }
 .official-strip-title { font-size: 1rem; font-weight: 700; color: #1a1a1a; margin: 0; }
 .official-strip-cta { color: #B979B1; font-weight: 700; font-size: .9rem; white-space: nowrap; }
+
+/* 🔥 热点上榜 section */
+.hot-trend {
+  max-width: 980px;
+  margin: 30px auto;
+  padding: 26px 30px;
+  background: linear-gradient(135deg, #fff5e6, #fff0f0);
+  border: 2px solid #ffb800;
+  border-radius: 24px;
+  box-shadow: 0 8px 26px rgba(255, 184, 0, .18), 0 0 0 4px rgba(255, 184, 0, .08);
+}
+.hot-trend-head {
+  display: flex; align-items: center; gap: 14px;
+  flex-wrap: wrap; margin-bottom: 16px;
+}
+.hot-trend-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: linear-gradient(90deg, #ff4d4d, #ff8c00);
+  color: #fff;
+  border-radius: 999px;
+  font-size: .88rem;
+  font-weight: 800;
+  box-shadow: 0 3px 10px rgba(255, 77, 77, .35);
+  animation: hotPulse 2s ease-in-out infinite;
+}
+@keyframes hotPulse {
+  0%, 100% { box-shadow: 0 3px 10px rgba(255, 77, 77, .35); transform: scale(1); }
+  50% { box-shadow: 0 3px 18px rgba(255, 77, 77, .6); transform: scale(1.02); }
+}
+.hot-trend-title { margin: 0; font-size: 1.35rem; font-weight: 900; color: #3A2A55; }
+.hot-trend-chart {
+  border-radius: 14px; overflow: hidden;
+  border: 1px solid rgba(255, 184, 0, .25);
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
+}
+.hot-trend-chart img { display: block; width: 100%; height: auto; }
+.hot-trend-notes-title {
+  font-size: 1rem; font-weight: 800; color: #7A4574;
+  margin-bottom: 12px;
+}
+.hot-trend-notes {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+}
+@media (max-width: 900px) {
+  .hot-trend { padding: 20px; }
+  .hot-trend-notes { grid-template-columns: 1fr; }
+}
 
 /* Section */
 .section {
