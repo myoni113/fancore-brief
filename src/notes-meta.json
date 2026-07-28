@@ -2,8 +2,10 @@
   "presentation": [
     {
       "id": "6a5cecc5000000000e03600f",
-      "title": "小红书",
-      "cover": "https://picasso-static.xiaohongshu.com/fe-platform/e6214e4fbfae2cf14d634d4296916e8a5eaefdf4.png"
+      "title": "fancore 同框穿搭",
+      "cover": "",
+      "token": "ABFJY94ncmbYc-JXbdtfqkFp-HWV8pkOfvzFZI_QofBQY=",
+      "source": "pc_chat"
     },
     {
       "id": "6a4919f50000000017008dd1",
@@ -24,11 +26,6 @@
       "id": "6a5209ce000000001c0246d2",
       "title": "穿搭暗号｜当我第一次尝试奈奈风穿搭🐰 - 小红书",
       "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/8cd6913ae1f64806aba9f4852032ff9d/1040g2sg322fpri7r7eig5nvcjodgbkuq4v23uf0!nd_dft_wlteh_jpg_3"
-    },
-    {
-      "id": "69cba614000000002301124d",
-      "title": "jojo本jo吗有意思 - 小红书",
-      "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/195aa92ba8d3da3ba9aadeec65457d58/1040g2sg31uci75uj1s705of4cdik0r1kom433n0!nd_dft_wlteh_jpg_3"
     }
   ],
   "JOJOcore": [
@@ -41,16 +38,6 @@
       "id": "686324d0000000002400ba7b",
       "title": "Jo里Jo气穿搭小技巧(ˊᵒ̴̶̷̤ꇴᵒ̴̶̷̤ˋ) - 小红书",
       "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/9dcd2dd9d9663f47f5e2fc264a0dae67/notes_pre_post/1040g3k031jcfmh3bio2g4bumalei0efu8i153m8!nd_dft_wlteh_jpg_3"
-    },
-    {
-      "id": "68cbe088000000001302bb22",
-      "title": "当女朋友缠着你jojo立…… - 小红书",
-      "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/c1788a7c193ab5069b92ffff15367248/1040g00831mipa8jomg205no9ehjgbg70bgvfc1o!nd_dft_wlteh_jpg_3"
-    },
-    {
-      "id": "6a4903b6000000001702f22f",
-      "title": "当女朋友又想看JOJO立了……（日本本土版） - 小红书",
-      "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/c2b7f45a91927c28b875c2faa8ee20a3/notes_pre_post/1040g3k83226vrbq0noa05no9ehjgbg705v82sf8!nd_dft_wlteh_jpg_3"
     }
   ],
   "奈奈core": [
@@ -82,16 +69,6 @@
       "id": "6905f016000000000700ef7d",
       "title": "匠妹的乐佩公主万圣节穿搭🎀✨ - 小红书",
       "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/98f36a77fddea43d8e334bc1a4471e0d/notes_pre_post/1040g3k031obfncseks005okevt8ockhg38bu9b8!nd_dft_wlteh_jpg_3"
-    },
-    {
-      "id": "690f8c7f0000000007009153",
-      "title": "茉莉公主蹦EDCO - 小红书",
-      "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/89cdf7c8a789ba071eec3eea08fb6d79/notes_pre_post/1040g3k031okaudsj4uig5n593bqkghqasdojso0!nd_dft_wlteh_jpg_3"
-    },
-    {
-      "id": "6a57b835000000000f005ff0",
-      "title": "晚安💤 - 小红书",
-      "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/1829bacbfb196a256dc5df4703da0257/notes_pre_post/1040g3k0322lbebhp720g5pm8g1piu28djhugf30!nd_dft_wlteh_jpg_3"
     }
   ],
   "飞天小女警core": [
@@ -104,11 +81,6 @@
       "id": "69ef6af00000000036018fc7",
       "title": "当我把《飞天小女警》作为灵感穿搭跳舞 - 小红书",
       "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/37c2fd236b694b0f7f7038c770c689bd/1040g2sg31vffreop2qe048ddog0co47usdeqjvg!nd_dft_wlteh_jpg_3"
-    },
-    {
-      "id": "6a2cb6b30000000035032d91",
-      "title": "🥀🍎迪士尼反派穿搭终于来了！ - 小红书",
-      "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/c13a9ef5de30f9f71c3e643033841deb/1040g2sg321bbgum274e05omme683hjnudfk92co!nd_dft_wlteh_jpg_3"
     }
   ],
   "鬼灭core": [
@@ -116,11 +88,6 @@
       "id": "68d486eb000000001101c0fe",
       "title": "鬼灭之刃的灵感穿搭🗡️不是cos - 小红书",
       "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/0e22a3cf2f82b42ef1ed23485147bf8c/1040g2sg31mr7evcu5m705ps43s127ii4jflfqq0!nd_dft_wlteh_jpg_3"
-    },
-    {
-      "id": "6930124b000000001e004eae",
-      "title": "穿搭灵感来自于… - 小红书",
-      "cover": "http://sns-webpic-qc.xhscdn.com/202607281306/c885ddac32f010320dbbd770b3f97f15/1040g00831pkkeaamks005of4cdik0r1ketmp3so!nd_dft_wlteh_jpg_3"
     }
   ],
   "HxHcore": [
