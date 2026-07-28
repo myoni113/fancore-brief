@@ -52,27 +52,7 @@
 
     <!-- 官宣笔记已移至 Hero 内部 CTA 下方，这里不重复放 -->
 
-    <!-- ────── 一、圈层简介 ────── -->
-    <section id="intro" class="section">
-      <header class="section-head">
-        <div class="head-badge"><span class="badge-num">一</span></div>
-        <div class="head-title-wrap">
-          <h2 class="section-title">圈层简介</h2>
-          <span class="section-en">CHAPTER 1 · INTRO</span>
-        </div>
-      </header>
-
-      <div class="intro-card">
-        <div class="intro-badge">「2.5 次元圈层」</div>
-        <p class="intro-text">
-          从<b>追的番 / 玩的游戏 / 关注的 IP</b> 中人物角色的标志性
-          <b>穿搭颜色 / 元素</b>汲取灵感，以喜欢的 ta 为灵感，
-          创作属于你的日常穿搭风格。
-        </p>
-      </div>
-    </section>
-
-    <!-- 🔥 热点上榜 — 一、与二之间 -->
+    <!-- 🔥 热点上榜 — Hero 后、章一前 -->
     <section class="hot-trend">
       <div class="hot-trend-head">
         <span class="hot-trend-badge">🚨 目前内容热度正飞速趿升中</span>
@@ -91,6 +71,26 @@
           </div>
           <p class="mini-title">{{ clean(n.title) }}</p>
         </a>
+      </div>
+    </section>
+
+    <!-- ────── 一、圈层简介 ────── -->
+    <section id="intro" class="section">
+      <header class="section-head">
+        <div class="head-badge"><span class="badge-num">一</span></div>
+        <div class="head-title-wrap">
+          <h2 class="section-title">圈层简介</h2>
+          <span class="section-en">CHAPTER 1 · INTRO</span>
+        </div>
+      </header>
+
+      <div class="intro-card">
+        <div class="intro-badge">「2.5 次元圈层」</div>
+        <p class="intro-text">
+          从<b>追的番 / 玩的游戏 / 关注的 IP</b> 中人物角色的标志性
+          <b>穿搭颜色 / 元素</b>汲取灵感，以喜欢的 ta 为灵感，
+          创作属于你的日常穿搭风格。
+        </p>
       </div>
     </section>
 
