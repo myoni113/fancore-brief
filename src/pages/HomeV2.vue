@@ -139,7 +139,7 @@
 
       <!-- 3.1 内容范式 -->
       <h3 class="sub-heading">
-        <span class="sub-heading-num">3.1</span> 内容范式 · 动漫角色 × 真人 同框
+        <span class="sub-heading-num">3.1</span> #fancore 的呈现形式？
       </h3>
 
       <div class="rec-strip">🌟 推荐身着 fancore 灵感穿搭 和「二次元人物形象」同框</div>
@@ -164,7 +164,7 @@
       </div>
 
       <h3 class="sub-heading" style="margin-top: 26px">
-        <span class="sub-heading-num">3.2</span> 同框参考笔记
+        同框参考笔记
       </h3>
       <div class="notes-row-5">
         <a v-for="n in notes.presentation" :key="n.id"
@@ -179,7 +179,7 @@
 
       <!-- 3.3 主推 core -->
       <h3 class="sub-heading" style="margin-top: 30px">
-        <span class="sub-heading-num">3.3</span> 更多 core 风格 · 灵感清单
+        <span class="sub-heading-num">3.2</span> #fancore 可以变成？
       </h3>
       <div class="core-row-2">
         <div v-for="core in row1Cores" :key="core.key" class="core-block">
@@ -234,6 +234,14 @@
             <p class="mini-title">{{ clean(n.title) }}</p>
           </a>
         </div>
+      </div>
+
+      <!-- 3.3 你的 fancore 是？（行动号召） -->
+      <div class="your-fancore">
+        <span class="your-fancore-arrow">→</span>
+        <span class="your-fancore-text">你的 fancore 是？</span>
+        <a class="your-fancore-btn"
+           href="https://www.xiaohongshu.com/publish/publish" target="_blank">去发布属于你的 →</a>
       </div>
     </section>
 
@@ -693,6 +701,41 @@ function fallback(text: string, done: () => void) {
 }
 .core-tag.mini { padding: 4px 10px; gap: 4px; align-self: flex-start; }
 .core-tag.mini .core-tag-name { font-size: .88rem; }
+
+/* 你的 fancore 是？ - 行动号召 */
+.your-fancore {
+  display: flex; align-items: center; justify-content: center; gap: 14px;
+  margin: 30px 0 10px;
+  padding: 22px 28px;
+  background: linear-gradient(135deg, #fff0f5, #ffd4e5);
+  border: 2px dashed #ff6b9d;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+.your-fancore-arrow {
+  width: 38px; height: 38px;
+  background: #d63384; color: #fff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(214, 51, 132, .35);
+}
+.your-fancore-text {
+  font-size: 1.3rem; font-weight: 900;
+  background: linear-gradient(135deg, #ff6b9d, #d63384);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.your-fancore-btn {
+  padding: 10px 24px;
+  background: #d63384; color: #fff !important;
+  border-radius: 999px;
+  font-weight: 700; font-size: .95rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(214, 51, 132, .3);
+  transition: all .2s;
+}
+.your-fancore-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(214, 51, 132, .45); }
 
 /* Direction block (四) */
 .direction-block {
