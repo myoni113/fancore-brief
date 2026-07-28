@@ -97,7 +97,7 @@
         </div></div>
         <div class="rule-item"><span class="rule-num">3</span><div class="rule-body">
           <h4>笔记正文</h4>
-          <p>与「自搭出街 穿搭」相关，分享如何根据喜欢的 <b>ta</b> 发散灵感演绎穿搭。</p>
+          <p>与<b>2.5 次元灵感穿搭</b>相关，分享如何根据喜欢的 <b>ta</b> 发散灵感演绎穿搭。</p>
         </div></div>
         <div class="rule-item"><span class="rule-num">4</span><div class="rule-body">
           <h4>必带话题</h4>
