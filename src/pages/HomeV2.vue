@@ -246,13 +246,10 @@
         </div>
       </div>
 
-      <!-- 3.3 你的 fancore 是？（行动号召） -->
-      <div class="your-fancore">
-        <span class="your-fancore-arrow">→</span>
-        <span class="your-fancore-text">你的 fancore 是？</span>
-        <a class="your-fancore-btn"
-           href="https://www.xiaohongshu.com/" target="_blank">去发布属于你的 →</a>
-      </div>
+      <!-- 3.3 你的 fancore 是什么？——纯文字标语 -->
+      <p class="your-fancore-plain">
+        你的 fancore 是什么？去发布属于你的 fancore！
+      </p>
     </section>
 
     <!-- ────── 四、其他内容方向 ────── -->
@@ -772,40 +769,16 @@ function fallback(text: string, done: () => void) {
 .core-tag.mini { padding: 4px 10px; gap: 4px; align-self: flex-start; }
 .core-tag.mini .core-tag-name { font-size: .88rem; }
 
-/* 你的 fancore 是？ - 行动号召 */
-.your-fancore {
-  display: flex; align-items: center; justify-content: center; gap: 14px;
-  margin: 30px 0 10px;
-  padding: 22px 28px;
-  background: linear-gradient(135deg, #fff0f5, #ffd4e5);
-  border: 2px dashed #ff6b9d;
-  border-radius: 20px;
-  flex-wrap: wrap;
+/* 你的 fancore 是什么？ - 纯文字 */
+.your-fancore-plain {
+  margin: 26px 0 6px;
+  padding: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #d63384;
+  text-align: center;
+  line-height: 1.6;
 }
-.your-fancore-arrow {
-  width: 38px; height: 38px;
-  background: #d63384; color: #fff;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 900; font-size: 1.2rem;
-  box-shadow: 0 4px 10px rgba(214, 51, 132, .35);
-}
-.your-fancore-text {
-  font-size: 1.3rem; font-weight: 900;
-  background: linear-gradient(135deg, #ff6b9d, #d63384);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.your-fancore-btn {
-  padding: 10px 24px;
-  background: #d63384; color: #fff !important;
-  border-radius: 999px;
-  font-weight: 700; font-size: .95rem;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(214, 51, 132, .3);
-  transition: all .2s;
-}
-.your-fancore-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(214, 51, 132, .45); }
 
 /* Direction block (四) */
 .direction-block {
