@@ -56,14 +56,16 @@
     <section class="hot-trend">
       <div class="hot-trend-head">
         <span class="hot-trend-badge">🚨 目前内容热度正飞速趿升中</span>
-        <h3 class="hot-trend-title">7.25 热点上榜</h3>
       </div>
       <div class="hot-trend-body">
-        <div class="hot-trend-chart">
-          <img :src="hotTrend" alt="热度趋势" loading="lazy"/>
+        <div class="hot-trend-left">
+          <div class="hot-trend-caption">🔥 7.25 热点上榜</div>
+          <div class="hot-trend-chart">
+            <img :src="hotTrend" alt="热度趋势" loading="lazy"/>
+          </div>
         </div>
         <div class="hot-trend-right">
-          <div class="hot-trend-notes-title">🔥 爆款笔记</div>
+          <div class="hot-trend-caption">🔥 爆款笔记</div>
           <div class="hot-trend-notes">
             <a v-for="n in hotNotes" :key="n.id"
                :href="`https://www.xiaohongshu.com/explore/${n.id}`" target="_blank"
@@ -610,22 +612,23 @@ function fallback(text: string, done: () => void) {
 .hot-trend-title { margin: 0; font-size: 1.35rem; font-weight: 900; color: #3A2A55; }
 .hot-trend-body {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 20px;
   align-items: start;
 }
-.hot-trend-chart {
-  border-radius: 14px; overflow: hidden;
-  border: 1px solid rgba(255, 184, 0, .25);
-  background: #fff;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
-}
-.hot-trend-chart img { display: block; width: 100%; height: auto; }
-.hot-trend-right { min-width: 0; }
-.hot-trend-notes-title {
+.hot-trend-left, .hot-trend-right { min-width: 0; }
+.hot-trend-caption {
   font-size: 1rem; font-weight: 800; color: #7A4574;
   margin-bottom: 12px;
 }
+.hot-trend-chart {
+  border-radius: 12px; overflow: hidden;
+  border: 1px solid rgba(255, 184, 0, .25);
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
+  aspect-ratio: 3 / 4;
+}
+.hot-trend-chart img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .hot-trend-notes {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
 }
