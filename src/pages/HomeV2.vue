@@ -338,9 +338,15 @@ if (notes.JOJOcore) {
 // 我们只用前 2 条（阿宅 + 痛衣），并从 other 里映射为「影响穿搭审美的动画」和「阿宅现生怎么穿」两组示范
 // 简化处理：直接给两条方向各绑一篇笔记（示范）
 if (notes.other && notes.other.length >= 2) {
-  // 拆两条：dir1 = 影响穿搭审美的动画 → 用第 3 条「从动漫中走出来之人」示范
+  // dir1 = 影响穿搭审美的动画 → 新 note（分享人生中最影响我穿搭审美的四部动画）
+  notes['dir-animation'] = [{
+    id: '682ab1e5000000000c03866b',
+    token: 'ABJyuUsArlPnJiEVD6f-cHT9PgpaLL0h0rRFc4zzruW0A=',
+    source: 'pc_search',
+    title: '分享人生中最影响我穿搭审美的四部动画',
+    cover: 'http://sns-webpic-qc.xhscdn.com/202607281957/7bebd492086e8e3d05ca8b1abb691ee3/1040g00831hlcdsa9jo005nlp4kag8htrv1p3tv0!nd_dft_wlteh_jpg_3',
+  }]
   // dir2 = 阿宅现生怎么穿 → 用第 1 条「阿宅和现生朋友出门 belike」示范
-  notes['dir-animation'] = [notes.other[2] || notes.other[0]]
   notes['dir-otaku']     = [notes.other[0]]
 }
 
