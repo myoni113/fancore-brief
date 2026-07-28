@@ -109,6 +109,8 @@ visibility: SELF_ONLY
 - **v1.0.56** — 2026-07-28 20:11 — redeploy 到 Cowork，alias=`fancore-brief`，deploymentId=15430
 
 - **v1.0.57** — 2026-07-28 20:14 — redeploy 到 Cowork，alias=`fancore-brief`，deploymentId=15430
+- **v1.0.58** — 2026-07-28 20:17 — redeploy 到 Cowork，alias=`fancore-brief`，deploymentId=15430
+
 ## 元信息变更
 <!-- update_metadata 自动追加 -->
 

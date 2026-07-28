@@ -249,7 +249,7 @@
 
       <!-- 3.3 你的 fancore 是什么？——纯文字标语 -->
       <p class="your-fancore-plain">
-        你的 fancore 是什么？去发布属于你的 fancore！
+        你的 fancore 是什么？马上去发布属于你的 fancore～
       </p>
     </section>
 
