@@ -134,10 +134,10 @@
       </header>
 
       <h3 class="sub-heading">
-        <span class="sub-heading-num">1.</span> 推荐框架 · 二次元 × 真人 同框
+        <span class="sub-heading-num">1.</span> 推荐框架 · 动漫角色 × 真人 同框
       </h3>
       <div class="pattern-tabs">
-        <span class="pattern-tab active">推荐: 二次元 × 真人 同框</span>
+        <span class="pattern-tab active">推荐: 动漫角色 × 真人 同框</span>
       </div>
 
       <h3 class="sub-heading" style="margin-top: 26px">
