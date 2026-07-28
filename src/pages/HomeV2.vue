@@ -157,11 +157,6 @@
       </p>
 
       <div class="pattern-card">
-        <div class="pattern-visual-grid">
-          <div class="pattern-visual-item"><img :src="patternA" alt="同框示例 A" loading="lazy"/></div>
-          <div class="pattern-visual-item"><img :src="patternB" alt="同框示例 B" loading="lazy"/></div>
-          <div class="pattern-visual-item"><img :src="patternC" alt="同框示例 C" loading="lazy"/></div>
-        </div>
         <ol class="pattern-steps">
           <li><span class="step-num">1</span><div>
             <h5>封面动漫真人同框</h5>
@@ -172,6 +167,11 @@
             <p>提取角色人物的<b>标志性配色 / 单品 / 整体造型风格</b>，搭配你的穿搭</p>
           </div></li>
         </ol>
+        <div class="pattern-visual-grid">
+          <div class="pattern-visual-item"><img :src="patternA" alt="同框示例 A" loading="lazy"/></div>
+          <div class="pattern-visual-item"><img :src="patternB" alt="同框示例 B" loading="lazy"/></div>
+          <div class="pattern-visual-item"><img :src="patternC" alt="同框示例 C" loading="lazy"/></div>
+        </div>
       </div>
 
       <h3 class="sub-heading" style="margin-top: 26px">
@@ -720,11 +720,15 @@ function fallback(text: string, done: () => void) {
   padding: 20px; background: rgba(255, 250, 253, .65);
   border-radius: 20px; border: 1px solid rgba(121, 80, 160, .1);
 }
+.pattern-steps {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+  list-style: none; padding: 0; margin: 0 0 20px;
+}
 .pattern-visual-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .pattern-visual-item {
   aspect-ratio: 3 / 4;
@@ -747,6 +751,7 @@ function fallback(text: string, done: () => void) {
   border: 1px solid rgba(121, 80, 160, .1);
   align-items: flex-start;
 }
+.pattern-steps + .pattern-steps { display: none; }
 .pattern-steps li:last-child { border-bottom: none; }
 .step-num {
   flex: 0 0 28px; height: 28px; background: #3A2A55; color: #fff; border-radius: 50%;
