@@ -97,7 +97,10 @@
               <span class="tag-pill">#穿搭暗号对一下</span>
               <span class="tag-pill">#fancore</span>
             </div>
-            <a class="pill-btn" href="https://www.xiaohongshu.com/publish/publish" target="_blank">发布</a>
+            <button class="copy-hashtags" type="button" @click="copyHashtags">
+              <span v-if="copyState === 'copied'">✅ 已复制！去发布粘上吧</span>
+              <span v-else>📋 #穿搭暗号对一下 #fancore　点击复制</span>
+            </button>
           </div>
         </div>
       </div>
@@ -328,6 +331,31 @@ const allCores = [
 ]
 const activeCore = ref('奈奈core')
 const activeCoreDef = computed(() => allCores.find(c => c.key === activeCore.value) || allCores[0])
+
+// 复制话题到剪贴板
+const copyState = ref<'idle' | 'copied'>('idle')
+function copyHashtags() {
+  const text = '#穿搭暗号对一下 #fancore'
+  const done = () => {
+    copyState.value = 'copied'
+    setTimeout(() => (copyState.value = 'idle'), 2000)
+  }
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(done).catch(() => fallback(text, done))
+  } else {
+    fallback(text, done)
+  }
+}
+function fallback(text: string, done: () => void) {
+  const ta = document.createElement('textarea')
+  ta.value = text
+  ta.style.position = 'fixed'
+  ta.style.opacity = '0'
+  document.body.appendChild(ta)
+  ta.select()
+  try { document.execCommand('copy'); done() } catch { /* noop */ }
+  document.body.removeChild(ta)
+}
 </script>
 
 <style scoped>
@@ -486,7 +514,30 @@ const activeCoreDef = computed(() => allCores.find(c => c.key === activeCore.val
 .rule-body p b { color: #d63384; }
 .tags-inline { display: inline-flex; gap: 8px; margin-right: 12px; }
 .tag-pill { padding: 3px 12px; background: #ffe4ec; color: #d63384; border-radius: 999px; font-size: .82rem; font-weight: 700; }
-.pill-btn { display: inline-block; padding: 4px 14px; background: #2a1a20; color: #fff !important; border-radius: 999px; font-size: .8rem; text-decoration: none; margin-left: 6px; }
+
+/* 点击复制话题按钮 */
+.copy-hashtags {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: linear-gradient(90deg, #fff0f5, #ffe4ec);
+  color: #2a1a20;
+  font-size: .92rem;
+  font-weight: 700;
+  border: 1.5px dashed #ff6b9d;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all .2s;
+  width: 100%;
+  text-align: center;
+}
+.copy-hashtags:hover {
+  background: linear-gradient(90deg, #ffe4ec, #ffd4e5);
+  border-color: #d63384;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 107, 157, .25);
+}
+.copy-hashtags:active { transform: translateY(0); }
 
 /* 官宣 */
 .official-hero {
