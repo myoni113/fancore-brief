@@ -141,10 +141,10 @@
 
       <!-- 3.1 内容范式 -->
       <h3 class="sub-heading">
-        <span class="sub-heading-num">3.1</span> #fancore 的呈现形式？
+        <span class="sub-heading-num">3.1</span> #AGCcore 的呈现形式？
       </h3>
 
-      <div class="rec-strip">🌟 推荐身着 fancore 灵感穿搭 和「二次元人物形象」同框</div>
+      <div class="rec-strip">🌟 推荐身着 AGCcore 灵感穿搭 和「二次元人物形象」同框</div>
       <p class="pattern-lead">
         🌟 图文笔记同框展示，视频笔记做封面展示和开头片段同框，示例如下 👇
       </p>
@@ -181,7 +181,7 @@
 
       <!-- 3.3 主推 core -->
       <h3 class="sub-heading" style="margin-top: 30px">
-        <span class="sub-heading-num">3.2</span> #fancore 可以变成？
+        <span class="sub-heading-num">3.2</span> #AGCcore 可以变成？
       </h3>
       <div class="core-row-2">
         <div v-for="core in row1Cores" :key="core.key" class="core-block">
@@ -238,10 +238,10 @@
         </div>
       </div>
 
-      <!-- 3.3 你的 fancore 是？（行动号召） -->
+      <!-- 3.3 你的 AGCcore 是？（行动号召） -->
       <div class="your-fancore">
         <span class="your-fancore-arrow">→</span>
-        <span class="your-fancore-text">你的 fancore 是？</span>
+        <span class="your-fancore-text">你的 AGCcore 是？</span>
         <a class="your-fancore-btn"
            href="https://www.xiaohongshu.com/publish/publish" target="_blank">去发布属于你的 →</a>
       </div>
