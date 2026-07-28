@@ -128,7 +128,6 @@
           <h2 class="section-title">内容范式</h2>
           <span class="section-en">02 · CONTENT PATTERNS</span>
         </div>
-        <p class="section-sub">优先推荐两类范式：同框、色调呼应，占位赛道抢占先机</p>
       </header>
 
       <h3 class="sub-heading">
