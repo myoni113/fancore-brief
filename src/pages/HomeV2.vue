@@ -157,8 +157,10 @@
       </p>
 
       <div class="pattern-card">
-        <div class="pattern-visual">
-          <img :src="patternVisual" alt="同框结构示例" class="pattern-visual-img"/>
+        <div class="pattern-visual-grid">
+          <div class="pattern-visual-item"><img :src="patternA" alt="同框示例 A" loading="lazy"/></div>
+          <div class="pattern-visual-item"><img :src="patternB" alt="同框示例 B" loading="lazy"/></div>
+          <div class="pattern-visual-item"><img :src="patternC" alt="同框示例 C" loading="lazy"/></div>
         </div>
         <ol class="pattern-steps">
           <li><span class="step-num">1</span><div>
@@ -314,7 +316,9 @@ import { ref } from 'vue'
 import notesMeta from '../notes-meta.json'
 import fancore1 from '../assets/fancore-1.webp'
 import jojocoreFeatured from '../assets/jojocore-featured.webp'
-import patternVisual from '../assets/pattern-visual.webp'
+import patternA from '../assets/pattern-a.webp'
+import patternB from '../assets/pattern-b.webp'
+import patternC from '../assets/pattern-c.webp'
 
 const raw = notesMeta as Record<string, any[]>
 const notes: Record<string, any[]> = JSON.parse(JSON.stringify(raw))
@@ -708,19 +712,37 @@ function fallback(text: string, done: () => void) {
 .pattern-lead { font-size: .95rem; color: #4a3f6a; margin: 8px 0 14px; line-height: 1.7; }
 
 .pattern-card {
-  display: grid; grid-template-columns: 1fr 1.1fr; gap: 22px;
+  display: block;
   padding: 20px; background: rgba(255, 250, 253, .65);
   border-radius: 20px; border: 1px solid rgba(124, 58, 237, .1);
 }
-.pattern-visual {
-  background: linear-gradient(135deg, #fff, #f8f5ff);
-  border: 1px dashed #b8a4fb; border-radius: 16px;
-  overflow: hidden; min-height: 200px;
-  display: flex; align-items: center; justify-content: center;
+.pattern-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
 }
-.pattern-visual-img { max-width: 100%; max-height: 320px; display: block; }
-.pattern-steps { list-style: none; padding: 0; margin: 0; }
-.pattern-steps li { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px dashed rgba(124, 58, 237, .1); }
+.pattern-visual-item {
+  aspect-ratio: 3 / 4;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #efe8ff;
+  box-shadow: 0 4px 14px rgba(124, 58, 237, .15);
+  transition: transform .2s;
+}
+.pattern-visual-item:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(124, 58, 237, .25); }
+.pattern-visual-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pattern-steps {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+  list-style: none; padding: 0; margin: 0;
+}
+.pattern-steps li {
+  display: flex; gap: 12px; padding: 14px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid rgba(124, 58, 237, .1);
+  align-items: flex-start;
+}
 .pattern-steps li:last-child { border-bottom: none; }
 .step-num {
   flex: 0 0 28px; height: 28px; background: #2a1f45; color: #fff; border-radius: 50%;
@@ -856,7 +878,9 @@ function fallback(text: string, done: () => void) {
   .topnav { gap: 12px; font-size: .82rem; }
   .hero-split { grid-template-columns: 1fr; padding: 30px 24px; }
   .hero-title { font-size: 2rem; }
-  .pattern-card { grid-template-columns: 1fr; }
+  .pattern-card { padding: 16px; }
+  .pattern-visual-grid { grid-template-columns: 1fr; }
+  .pattern-steps { grid-template-columns: 1fr; }
   .core-row-2 { grid-template-columns: 1fr; }
   .core-row-4 { grid-template-columns: repeat(2, 1fr); }
   .notes-row-5 { grid-template-columns: repeat(2, 1fr); }
