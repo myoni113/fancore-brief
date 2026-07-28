@@ -216,10 +216,11 @@
           <div class="hero-card-cover">
             <img :src="jojocoreFeatured" :alt="jojoFeatured.title" loading="lazy"/>
             <div class="hero-card-overlay">
-              <div class="hero-card-badge">FEATURED · JOJOcore</div>
+              <div class="hero-card-badge">FEATURED</div>
               <div class="hero-card-content">
-                <h3>{{ clean(jojoFeatured.title) }}</h3>
-                <p>JOJO 的奇妙冒险风格 · 立式扭胯 + 亮色搭配</p>
+                <h3>JOJOcore</h3>
+                <p class="hero-card-sub">JOJO 的奇妙冒险风格 · 立式扭胯 + 亮色搭配</p>
+                <p class="hero-card-note">📖 {{ clean(jojoFeatured.title) }}</p>
               </div>
             </div>
           </div>
@@ -635,8 +636,9 @@ function fallback(text: string, done: () => void) {
   background: rgba(255, 255, 255, .3); backdrop-filter: blur(8px);
   border-radius: 999px; font-size: .72rem; font-weight: 800; letter-spacing: .1em;
 }
-.hero-card-content h3 { font-size: 1.35rem; font-weight: 900; margin: 0 0 6px; text-shadow: 0 2px 8px rgba(0,0,0,.4); line-height: 1.35; }
-.hero-card-content p { margin: 0; font-size: .88rem; opacity: .95; }
+.hero-card-content h3 { font-size: 2.4rem; font-weight: 900; margin: 0 0 8px; text-shadow: 0 2px 12px rgba(0,0,0,.55); line-height: 1.15; letter-spacing: .02em; }
+.hero-card-content .hero-card-sub { margin: 0 0 6px; font-size: .92rem; opacity: .95; font-weight: 600; }
+.hero-card-content .hero-card-note { margin: 0; font-size: .78rem; opacity: .85; font-weight: 400; }
 
 /* Outfit 右侧面板：选中 core 的笔记 grid（取代旧的 outfit-mini-list） */
 .outfit-notes-panel {
