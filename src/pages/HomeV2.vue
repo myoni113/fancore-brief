@@ -126,6 +126,17 @@
         </div>
       </header>
 
+      <!-- 什么是 AGCcore -->
+      <div class="what-is-card">
+        <div class="what-is-title">💡 什么是 AGCcore？</div>
+        <p class="what-is-text">
+          <b>AGC</b> 的位置可以引申替换为任何角色名 / 作品名，
+          例如 <b>JOJOcore</b>、<b>NANAcore</b>……从人物角色的
+          标志性 <b>穿搭颜色 / 元素</b>汲取灵感，
+          创作属于你的 <b>AGCcore 穿搭风格</b>。
+        </p>
+      </div>
+
       <!-- 3.1 内容范式 -->
       <h3 class="sub-heading">
         <span class="sub-heading-num">3.1</span> 内容范式 · 动漫角色 × 真人 同框
@@ -506,6 +517,28 @@ function fallback(text: string, done: () => void) {
 .section-sub { font-size: .9rem; color: #7a5a68; margin: 0; text-align: right; grid-column: 3; }
 
 /* Intro */
+.what-is-card {
+  padding: 20px 24px;
+  margin: 4px 0 12px;
+  background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+  border: 1.5px solid #ffb3c6;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(214, 51, 132, .12);
+}
+.what-is-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #d63384;
+  margin-bottom: 8px;
+}
+.what-is-text {
+  margin: 0;
+  font-size: .98rem;
+  line-height: 1.8;
+  color: #2a1a20;
+}
+.what-is-text b { color: #d63384; }
+
 .intro-card {
   padding: 28px 32px;
   background: linear-gradient(135deg, #fff0f5, #ffe4ec);
