@@ -191,7 +191,7 @@
             <a v-for="n in (notes[core.key] || [])" :key="n.id"
                :href="buildNoteUrl(n)" target="_blank" class="mini-note">
               <div class="mini-cover">
-                <img v-if="n.useLocalCover === 'fancore1'" :src="fancore1" :alt="clean(n.title)" loading="lazy"/>
+                <img v-if="n.localCover" :src="n.localCover" :alt="clean(n.title)" loading="lazy"/>
                 <img v-else-if="n.cover" :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
                 <span v-else class="fallback">📖</span>
               </div>
@@ -307,12 +307,21 @@
 import { ref } from 'vue'
 import notesMeta from '../notes-meta.json'
 import fancore1 from '../assets/fancore-1.webp'
+import jojocoreFeatured from '../assets/jojocore-featured.webp'
 import patternVisual from '../assets/pattern-visual.webp'
 
 const raw = notesMeta as Record<string, any[]>
 const notes: Record<string, any[]> = JSON.parse(JSON.stringify(raw))
 if (notes.presentation && notes.presentation[0] && !notes.presentation[0].cover) {
-  notes.presentation[0].localCover = fancore1
+  notes.presentation[0].localCover = jojocoreFeatured
+}
+// JOJOcore 里那条 6a5cecc5（无 cover）也用同一张
+if (notes.JOJOcore) {
+  for (const n of notes.JOJOcore) {
+    if (n.useLocalCover === 'fancore1' || !n.cover) {
+      n.localCover = jojocoreFeatured
+    }
+  }
 }
 
 // other 里的 3 篇按顺序：阿宅现生 / 痛衣 / 动漫走出来
