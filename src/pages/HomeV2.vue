@@ -58,19 +58,23 @@
         <span class="hot-trend-badge">🚨 目前内容热度正飞速趿升中</span>
         <h3 class="hot-trend-title">7.25 热点上榜</h3>
       </div>
-      <div class="hot-trend-chart">
-        <img :src="hotTrend" alt="热度趋势" loading="lazy"/>
-      </div>
-      <div class="hot-trend-notes-title">🔥 爆款笔记</div>
-      <div class="hot-trend-notes">
-        <a v-for="n in hotNotes" :key="n.id"
-           :href="`https://www.xiaohongshu.com/explore/${n.id}`" target="_blank"
-           class="mini-note">
-          <div class="mini-cover">
-            <img :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
+      <div class="hot-trend-body">
+        <div class="hot-trend-chart">
+          <img :src="hotTrend" alt="热度趋势" loading="lazy"/>
+        </div>
+        <div class="hot-trend-right">
+          <div class="hot-trend-notes-title">🔥 爆款笔记</div>
+          <div class="hot-trend-notes">
+            <a v-for="n in hotNotes" :key="n.id"
+               :href="`https://www.xiaohongshu.com/explore/${n.id}`" target="_blank"
+               class="mini-note">
+              <div class="mini-cover">
+                <img :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
+              </div>
+              <p class="mini-title">{{ clean(n.title) }}</p>
+            </a>
           </div>
-          <p class="mini-title">{{ clean(n.title) }}</p>
-        </a>
+        </div>
       </div>
     </section>
 
@@ -604,23 +608,31 @@ function fallback(text: string, done: () => void) {
   50% { box-shadow: 0 3px 18px rgba(255, 77, 77, .6); transform: scale(1.02); }
 }
 .hot-trend-title { margin: 0; font-size: 1.35rem; font-weight: 900; color: #3A2A55; }
+.hot-trend-body {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 20px;
+  align-items: start;
+}
 .hot-trend-chart {
   border-radius: 14px; overflow: hidden;
   border: 1px solid rgba(255, 184, 0, .25);
   background: #fff;
-  margin-bottom: 20px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
 }
 .hot-trend-chart img { display: block; width: 100%; height: auto; }
+.hot-trend-right { min-width: 0; }
 .hot-trend-notes-title {
   font-size: 1rem; font-weight: 800; color: #7A4574;
   margin-bottom: 12px;
 }
 .hot-trend-notes {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
 }
 @media (max-width: 900px) {
   .hot-trend { padding: 20px; }
+  .hot-trend-body { grid-template-columns: 1fr; }
+  .hot-trend-chart { max-width: 260px; margin: 0 auto; }
   .hot-trend-notes { grid-template-columns: 1fr; }
 }
 
