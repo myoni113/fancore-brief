@@ -243,7 +243,7 @@
         <span class="your-fancore-arrow">→</span>
         <span class="your-fancore-text">你的 AGCcore 是？</span>
         <a class="your-fancore-btn"
-           href="https://www.xiaohongshu.com/publish/publish" target="_blank">去发布属于你的 →</a>
+           href="https://www.xiaohongshu.com/" target="_blank">去发布属于你的 →</a>
       </div>
     </section>
 
