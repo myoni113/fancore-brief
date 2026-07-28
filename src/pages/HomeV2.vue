@@ -52,8 +52,8 @@
       <div class="hero-right">
         <div class="phone-mock">
           <div class="phone-notch"></div>
-          <img :src="fancore1" alt="fancore 穿搭" class="phone-cover"/>
-          <span class="phone-badge">#fancore</span>
+          <img :src="fancore1" alt="自搭出街 穿搭" class="phone-cover"/>
+          <span class="phone-badge">#自搭出街</span>
         </div>
       </div>
     </section>
@@ -76,7 +76,7 @@
         </div></div>
         <div class="rule-item"><span class="rule-num">2</span><div class="rule-body">
           <h4>活动主题</h4>
-          <p>与「fancore 穿搭」相关，分享如何根据喜欢的 ta 发散灵感演绎穿搭。</p>
+          <p>与「自搭出街 穿搭」相关，分享如何根据喜欢的 ta 发散灵感演绎穿搭。</p>
         </div></div>
         <div class="rule-item"><span class="rule-num">3</span><div class="rule-body">
           <h4>活动时间</h4>
@@ -168,7 +168,7 @@
           <h2 class="section-title">Core</h2>
           <span class="section-en">03 · CORE STYLES</span>
         </div>
-        <p class="section-sub">你的 fancore 可以变成——</p>
+        <p class="section-sub">你的自搭出街可以变成——</p>
       </header>
 
       <h3 class="sub-heading">
@@ -270,7 +270,7 @@
       <span class="dot"></span><span class="line"></span><span class="dot big red"></span><span class="line"></span><span class="dot"></span>
     </div>
     <footer class="footer-v2">
-      <p>#穿搭暗号对一下 · #fancore</p>
+      <p>#穿搭暗号对一下 · #自搭出街</p>
       <p class="footer-sub">小红书 2.5 次元圈层 · 活动 brief</p>
     </footer>
   </div>
