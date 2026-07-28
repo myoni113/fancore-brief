@@ -9,7 +9,7 @@
       <a href="#join">参与方式</a>
       <a href="#agccore">AGCcore</a>
       <a href="#others">其他方向</a>
-      <a href="https://www.xiaohongshu.com/publish/publish" target="_blank" class="cta-nav">发布征稿</a>
+      <a href="https://www.xiaohongshu.com/" target="_blank" class="cta-nav">发布征稿</a>
     </nav>
 
     <div class="deco-line">
