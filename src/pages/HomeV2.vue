@@ -630,17 +630,18 @@ function fallback(text: string, done: () => void) {
   border: 1px solid rgba(255, 184, 0, .25);
   background: #fff;
   box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
-  /* 高度自适应右侧笔记卡（封面 3:4 + 标题 40px+padding） */
-  aspect-ratio: auto;
   height: 100%;
-  min-height: 340px;
+  display: flex;
+  align-items: flex-end;   /* 图贴底部——与右侧笔记卡底齐平 */
+  justify-content: center;
+  overflow: hidden;
 }
 .hot-trend-chart img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top; /* 只裁下部，保留顶部 */
+  height: auto;
+  object-fit: contain;    /* 完整显示不裁切 */
+  object-position: bottom;
 }
 .hot-trend-notes {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
