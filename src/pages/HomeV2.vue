@@ -7,7 +7,7 @@
       </div>
       <a href="#intro">圈层简介</a>
       <a href="#join">参与方式</a>
-      <a href="#agccore">AGCcore</a>
+      <a href="#agccore">Fancore</a>
       <a href="#others">其他方向</a>
       <a href="https://www.xiaohongshu.com/" target="_blank" class="cta-nav">发布征稿</a>
     </nav>
@@ -120,13 +120,13 @@
       </div>
     </section>
 
-    <!-- ────── 三、主推内容方向 #AGCcore ────── -->
+    <!-- ────── 三、主推内容方向 #fancore ────── -->
     <section id="agccore" class="section">
       <header class="section-head">
         <div class="head-badge"><span class="badge-num">三</span></div>
         <div class="head-title-wrap">
-          <h2 class="section-title">主推内容方向 <span class="hash-accent">#AGCcore</span></h2>
-          <span class="section-en">CHAPTER 3 · AGCCORE</span>
+          <h2 class="section-title">主推内容方向 <span class="hash-accent">#fancore</span></h2>
+          <span class="section-en">CHAPTER 3 · FANCORE</span>
         </div>
       </header>
 
@@ -136,24 +136,24 @@
         <span class="hot-text">主推方向：动漫人物 × 真人同框！投稿即得大量流量！</span>
       </div>
 
-      <!-- 什么是 AGCcore -->
+      <!-- 什么是 fancore -->
       <div class="what-is-card">
-        <div class="what-is-title">💡 什么是 AGCcore？</div>
+        <div class="what-is-title">💡 什么是 fancore？</div>
         <p class="what-is-text">
-          <b>AGC</b> 的位置可以引申替换为任何角色名 / 作品名，
+          <b>fan</b> 的位置可以引申替换为任何角色名 / 作品名，
           例如 <b>JOJOcore</b>、<b>NANAcore</b>……从人物角色的
           标志性 <b>穿搭颜色 / 元素</b>汲取灵感，
-          创作属于你的 <b>AGCcore 穿搭风格</b>。
+          创作属于你的 <b>fancore 穿搭风格</b>。
         </p>
       </div>
 
       <!-- 3.1 内容范式 -->
       <h3 class="sub-heading">
-        <span class="sub-heading-num">3.1</span> #AGCcore 的呈现形式？
+        <span class="sub-heading-num">3.1</span> #fancore 的呈现形式？
       </h3>
 
       <p class="pattern-lead">
-        🌟 推荐身着 AGCcore 灵感穿搭 和「二次元人物形象」同框<br/>
+        🌟 推荐身着 fancore 灵感穿搭 和「二次元人物形象」同框<br/>
         🌟 图文笔记同框展示，视频笔记做封面展示和开头片段同框，示例如下 👇
       </p>
 
@@ -189,7 +189,7 @@
 
       <!-- 3.3 主推 core -->
       <h3 class="sub-heading" style="margin-top: 30px">
-        <span class="sub-heading-num">3.2</span> #AGCcore 可以变成？
+        <span class="sub-heading-num">3.2</span> #fancore 可以变成？
       </h3>
       <div class="core-row-2">
         <div v-for="core in row1Cores" :key="core.key" class="core-block">
@@ -246,10 +246,10 @@
         </div>
       </div>
 
-      <!-- 3.3 你的 AGCcore 是？（行动号召） -->
+      <!-- 3.3 你的 fancore 是？（行动号召） -->
       <div class="your-fancore">
         <span class="your-fancore-arrow">→</span>
-        <span class="your-fancore-text">你的 AGCcore 是？</span>
+        <span class="your-fancore-text">你的 fancore 是？</span>
         <a class="your-fancore-btn"
            href="https://www.xiaohongshu.com/" target="_blank">去发布属于你的 →</a>
       </div>
