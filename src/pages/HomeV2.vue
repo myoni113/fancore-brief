@@ -1,43 +1,36 @@
 <template>
   <div class="page-v2">
-    <!-- 顶部胶囊导航 -->
     <nav class="topnav">
       <div class="brand">
         <span class="brand-badge">🎨</span>
-        <span class="brand-name">2.5次元 brief</span>
+        <span class="brand-name">2.5次元圈层</span>
       </div>
-      <a href="#intro">Intro</a>
-      <a href="#rules">参与方式</a>
-      <a href="#patterns">主推方向</a>
-      <a href="#outfits">Fancore</a>
+      <a href="#intro">圈层简介</a>
+      <a href="#join">参与方式</a>
+      <a href="#agccore">AGCcore</a>
       <a href="#others">其他方向</a>
-      <a href="#submit" class="cta-nav">发布征稿</a>
+      <a href="#join" class="cta-nav">发布征稿</a>
     </nav>
 
-    <!-- 装饰分隔线 -->
     <div class="deco-line">
       <span class="dot"></span><span class="line"></span><span class="dot big"></span><span class="line"></span><span class="dot"></span>
     </div>
 
     <!-- Hero -->
-    <section id="intro" class="hero-split">
+    <section class="hero-split">
       <div class="hero-left">
         <span class="hero-tag">#穿搭暗号对一下 · #自搭出街</span>
         <h1 class="hero-title">穿搭暗号<span class="accent">对一下</span></h1>
         <p class="hero-desc">
           从追的番 / 玩的游戏 / 关注的 IP 中人物角色的
           <strong>标志性穿搭颜色 / 元素</strong>汲取灵感，
-          以喜欢的 ta 为灵感，创作属于你的二次元 × 现实穿搭风格。
+          以喜欢的 ta 为灵感，创作属于你的日常穿搭风格。
         </p>
         <div class="hero-cta-row">
-          <a class="btn btn-primary" href="https://www.xiaohongshu.com/publish/publish" target="_blank">
-            进入活动页发布
-          </a>
+          <a class="btn btn-primary" href="https://www.xiaohongshu.com/publish/publish" target="_blank">进入活动页发布</a>
           <a class="btn btn-ghost"
              href="https://doc.weixin.qq.com/forms/ANAAyQcbAAgAaYAdwYSAHcCNxjY7m1yFf?page=1"
-             target="_blank">
-            填写返稿投流表
-          </a>
+             target="_blank">填写返稿投流表</a>
         </div>
         <a class="official-inline"
            href="https://www.xiaohongshu.com/explore/6a5624c8000000001101e173" target="_blank">
@@ -58,15 +51,35 @@
       </div>
     </section>
 
-    <!-- Section 01 -->
-    <section id="rules" class="section">
+    <!-- ────── 一、圈层简介 ────── -->
+    <section id="intro" class="section">
       <header class="section-head">
-        <div class="head-badge"><span class="badge-num">01</span></div>
+        <div class="head-badge"><span class="badge-num">一</span></div>
         <div class="head-title-wrap">
-          <h2 class="section-title">活动规则</h2>
-          <span class="section-en">01 · RULES</span>
+          <h2 class="section-title">圈层简介</h2>
+          <span class="section-en">CHAPTER 1 · INTRO</span>
         </div>
-        <p class="section-sub">发布须遵循以下 5 条，站内加权投流的必备清单</p>
+      </header>
+
+      <div class="intro-card">
+        <div class="intro-badge">「2.5 次元圈层」</div>
+        <p class="intro-text">
+          从<b>追的番 / 玩的游戏 / 关注的 IP</b> 中人物角色的标志性
+          <b>穿搭颜色 / 元素</b>汲取灵感，以喜欢的 ta 为灵感，
+          创作属于你的日常穿搭风格。
+        </p>
+      </div>
+    </section>
+
+    <!-- ────── 二、参与方式 ────── -->
+    <section id="join" class="section">
+      <header class="section-head">
+        <div class="head-badge"><span class="badge-num">二</span></div>
+        <div class="head-title-wrap">
+          <h2 class="section-title">参与方式</h2>
+          <span class="section-en">CHAPTER 2 · HOW TO JOIN</span>
+        </div>
+        <p class="section-sub">发布前必读，投流规则一次讲清</p>
       </header>
 
       <div class="rule-list">
@@ -75,18 +88,14 @@
           <p>发布后<b>务必填写</b>返稿投流链接，薯薯会定期回扫，持续投流。</p>
         </div></div>
         <div class="rule-item"><span class="rule-num">2</span><div class="rule-body">
-          <h4>活动主题</h4>
-          <p>与「自搭出街 穿搭」相关，分享如何根据喜欢的 ta 发散灵感演绎穿搭。</p>
+          <h4>活动征稿</h4>
+          <p>即日起 — <b>9 月 15 日</b>，带话题发布笔记，瓜分上亿流量。</p>
         </div></div>
         <div class="rule-item"><span class="rule-num">3</span><div class="rule-body">
-          <h4>活动时间</h4>
-          <p>即日起 — <b>9 月 15 日</b></p>
+          <h4>笔记正文</h4>
+          <p>与「自搭出街 穿搭」相关，分享如何根据喜欢的 <b>ta</b> 发散灵感演绎穿搭。</p>
         </div></div>
         <div class="rule-item"><span class="rule-num">4</span><div class="rule-body">
-          <h4>标题正文</h4>
-          <p>推荐出现<b>人物角色 / 动漫名 + 穿搭相关关键词</b>。</p>
-        </div></div>
-        <div class="rule-item"><span class="rule-num">5</span><div class="rule-body">
           <h4>必带话题</h4>
           <div class="tags-inline">
             <span class="tag-pill">#穿搭暗号对一下</span>
@@ -100,81 +109,26 @@
       </div>
     </section>
 
-    <!-- 🚨 -->
+    <!-- 🚨 hot banner —— 三 段前 -->
     <section class="hot-banner">
       <span class="hot-icon">🚨</span>
       <span class="hot-text">主推方向：动漫人物 × 真人同框！投稿即得大量流量！</span>
     </section>
 
-    <!-- Section 02: 内容范式 -->
-    <section id="patterns" class="section">
+    <!-- ────── 三、主推内容方向 #AGCcore ────── -->
+    <section id="agccore" class="section">
       <header class="section-head">
-        <div class="head-badge"><span class="badge-num">02</span></div>
+        <div class="head-badge"><span class="badge-num">三</span></div>
         <div class="head-title-wrap">
-          <h2 class="section-title">内容范式</h2>
-          <span class="section-en">02 · CONTENT PATTERNS</span>
+          <h2 class="section-title">主推内容方向 <span class="hash-accent">#AGCcore</span></h2>
+          <span class="section-en">CHAPTER 3 · AGCCORE</span>
         </div>
       </header>
 
+      <!-- 3.1 主推 core -->
       <h3 class="sub-heading">
-        <span class="sub-heading-num">1.</span> 推荐框架 · 动漫角色 × 真人 同框
+        <span class="sub-heading-num">3.1</span> 主推 core
       </h3>
-      <div class="pattern-tabs">
-        <span class="pattern-tab active">推荐: 动漫角色 × 真人 同框</span>
-      </div>
-
-      <h3 class="sub-heading" style="margin-top: 26px">
-        <span class="sub-heading-num">2.</span> 动漫真人同框
-      </h3>
-      <div class="pattern-card">
-        <div class="pattern-visual">
-          <img :src="patternVisual" alt="同框结构示例" class="pattern-visual-img"/>
-        </div>
-        <ol class="pattern-steps">
-          <li><span class="step-num">1</span><div>
-            <h5>封面动漫真人同框</h5>
-            <p>将灵感来源的动漫人物贴在封面上</p>
-          </div></li>
-          <li><span class="step-num">2</span><div>
-            <h5>2.5 次元灵感穿搭</h5>
-            <p>提取动漫角色的<b>标志性配色 / 单品</b>，是灵感锚点</p>
-          </div></li>
-        </ol>
-      </div>
-
-      <h3 class="sub-heading" style="margin-top: 26px">
-        <span class="sub-heading-num">3.</span> 参考笔记
-      </h3>
-      <div class="pattern-footer">
-        <span class="footer-hint">👇 同款布局灵感笔记 ↓</span>
-      </div>
-      <div class="notes-row-5">
-        <a v-for="n in notes.presentation" :key="n.id"
-           :href="buildNoteUrl(n)" target="_blank" class="mini-note">
-          <div class="mini-cover">
-            <img v-if="n.localCover || n.cover" :src="n.localCover || proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
-            <span v-else class="fallback">📖</span>
-          </div>
-          <p class="mini-title">{{ clean(n.title) }}</p>
-        </a>
-      </div>
-    </section>
-
-    <!-- Section 03: Core -->
-    <section id="outfits" class="section">
-      <header class="section-head">
-        <div class="head-badge"><span class="badge-num">03</span></div>
-        <div class="head-title-wrap">
-          <h2 class="section-title">AGCcore</h2>
-          <span class="section-en">03 · AGCCORE</span>
-        </div>
-        <p class="section-sub">你的自搭出街可以变成——</p>
-      </header>
-
-      <h3 class="sub-heading">
-        <span class="sub-heading-num">1.</span> 主推 core
-      </h3>
-      <!-- Row 1: JOJOcore + 奈奈core -->
       <div class="core-row-2">
         <div v-for="core in row1Cores" :key="core.key" class="core-block">
           <div class="core-tag" :style="{background: core.gradient, color: core.color || '#fff'}">
@@ -195,7 +149,6 @@
         </div>
       </div>
 
-      <!-- Row 1.5: 迪士尼core + 飞天小女警core -->
       <div class="core-row-2" style="margin-top: 20px">
         <div v-for="core in row1bCores" :key="core.key" class="core-block">
           <div class="core-tag" :style="{background: core.gradient, color: core.color || '#fff'}">
@@ -215,9 +168,9 @@
         </div>
       </div>
 
-      <!-- Row 2: NANA + 鬼灭 + HxH + Kitty -->
+      <!-- 3.2 更多 core 风格 -->
       <h3 class="sub-heading" style="margin-top: 26px">
-        <span class="sub-heading-num">2.</span> 更多 core 风格
+        <span class="sub-heading-num">3.2</span> 更多 core 风格
       </h3>
       <div class="core-row-4">
         <div v-for="core in row2Cores" :key="core.key" class="core-mini-block">
@@ -234,15 +187,30 @@
           </a>
         </div>
       </div>
+
+      <!-- 3.3 参考同框布局笔记 -->
+      <h3 class="sub-heading" style="margin-top: 26px">
+        <span class="sub-heading-num">3.3</span> 参考同框布局
+      </h3>
+      <div class="notes-row-5">
+        <a v-for="n in notes.presentation" :key="n.id"
+           :href="buildNoteUrl(n)" target="_blank" class="mini-note">
+          <div class="mini-cover">
+            <img v-if="n.localCover || n.cover" :src="n.localCover || proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
+            <span v-else class="fallback">📖</span>
+          </div>
+          <p class="mini-title">{{ clean(n.title) }}</p>
+        </a>
+      </div>
     </section>
 
-    <!-- Section 04 -->
+    <!-- ────── 四、其他内容方向 ────── -->
     <section id="others" class="section">
       <header class="section-head">
-        <div class="head-badge"><span class="badge-num">04</span></div>
+        <div class="head-badge"><span class="badge-num">四</span></div>
         <div class="head-title-wrap">
           <h2 class="section-title">其他内容方向</h2>
-          <span class="section-en">04 · MORE IDEAS</span>
+          <span class="section-en">CHAPTER 4 · MORE IDEAS</span>
         </div>
         <p class="section-sub">切题延伸，参考实录笔记入门</p>
       </header>
@@ -266,7 +234,7 @@
       </div>
     </section>
 
-    <div id="submit" class="deco-line bottom">
+    <div class="deco-line bottom">
       <span class="dot"></span><span class="line"></span><span class="dot big red"></span><span class="line"></span><span class="dot"></span>
     </div>
     <footer class="footer-v2">
@@ -280,7 +248,6 @@
 import { ref } from 'vue'
 import notesMeta from '../notes-meta.json'
 import fancore1 from '../assets/fancore-1.webp'
-import patternVisual from '../assets/pattern-visual.webp'
 
 const raw = notesMeta as Record<string, any[]>
 const notes: Record<string, any[]> = JSON.parse(JSON.stringify(raw))
@@ -296,7 +263,6 @@ const clean = (t: string) => (t || '').replace(/\s*-\s*小红书\s*$/, '').trim(
 const proxied = (url: string) => url
   ? `https://wsrv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ''))}&w=500&we&output=webp`
   : ''
-
 const buildNoteUrl = (n: any) => {
   const base = `https://www.xiaohongshu.com/explore/${n.id}`
   if (n.token) {
@@ -306,17 +272,14 @@ const buildNoteUrl = (n: any) => {
   return base
 }
 
-// Row 1: JOJO + 奈奈
 const row1Cores = [
   { key: 'JOJOcore', name: 'JOJOcore', desc: 'JOJO 的奇妙冒险风格',       gradient: 'linear-gradient(135deg,#ffb3d9,#c48bd9)' },
   { key: '奈奈core', name: '奈奈core', desc: '蕾丝 + 泡泡短裤 + 小腿袜',   gradient: 'linear-gradient(135deg,#ff8fb1,#ff5c8a)' },
 ]
-// Row 1b: 迪士尼 + 飞天小女警
 const row1bCores = [
   { key: '迪士尼core',      name: '迪士尼core',      desc: '迪士尼公主 / 反派风格',   gradient: 'linear-gradient(135deg,#ffd6e0,#ffb3c6)', color: '#8a3a5c' },
   { key: '飞天小女警core', name: '飞天小女警core', desc: '毛毛 / 花花 / 泡泡三色配',   gradient: 'linear-gradient(135deg,#c8f7d4,#ffe0eb)', color: '#3a5a2d' },
 ]
-// Row 2: NANA + 鬼灭 + HxH + Kitty —— 一行 4 列
 const row2Cores = [
   { key: 'NANAcore',  name: 'NANAcore',  gradient: 'linear-gradient(135deg,#ffe0eb,#ffb3c6)', color: '#8a3a5c' },
   { key: '鬼灭core',  name: '鬼灭core',  gradient: 'linear-gradient(135deg,#ff9a9e,#fecfef)', color: '#663' },
@@ -448,8 +411,9 @@ function fallback(text: string, done: () => void) {
 .phone-cover { width: 100%; height: 100%; object-fit: cover; display: block; }
 .phone-badge { position: absolute; top: 30px; right: 8px; padding: 4px 10px; background: rgba(255, 107, 157, .95); color: #fff; border-radius: 999px; font-size: .7rem; font-weight: 700; z-index: 3; }
 
+/* ============ 大 Section 章节 ============ */
 .section {
-  max-width: 980px; margin: 44px auto; padding: 32px 30px;
+  max-width: 980px; margin: 44px auto; padding: 36px 34px;
   background: rgba(255, 253, 249, .82);
   border: 1px solid rgba(214, 51, 132, .12);
   border-radius: 34px;
@@ -457,32 +421,63 @@ function fallback(text: string, done: () => void) {
 }
 .section-head {
   display: grid; grid-template-columns: auto 1fr auto;
-  gap: 16px; align-items: center; margin-bottom: 24px;
-  padding-bottom: 18px; border-bottom: 1px dashed rgba(214, 51, 132, .18);
+  gap: 18px; align-items: center; margin-bottom: 28px;
+  padding-bottom: 20px; border-bottom: 2px solid rgba(214, 51, 132, .18);
 }
 .head-badge { display: flex; }
 .badge-num {
-  width: 44px; height: 44px;
-  background: #d63384; color: #fff; border-radius: 50%;
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, #ff6b9d, #d63384);
+  color: #fff; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-weight: 800; font-size: 1.15rem;
-  box-shadow: 0 4px 12px rgba(214, 51, 132, .35);
-  border: 2px solid #fff;
-  outline: 3px solid rgba(214, 51, 132, .18);
+  font-weight: 900; font-size: 1.4rem;
+  box-shadow: 0 5px 14px rgba(214, 51, 132, .4);
+  border: 3px solid #fff;
+  outline: 3px solid rgba(214, 51, 132, .2);
 }
 .head-title-wrap { display: flex; flex-direction: column; }
-.section-title { font-size: 1.6rem; font-weight: 800; margin: 0; color: #2a1a20; letter-spacing: 0.02em; }
-.section-en { font-size: .72rem; color: #b48090; letter-spacing: .18em; margin-top: 2px; }
+.section-title { font-size: 1.75rem; font-weight: 900; margin: 0; color: #2a1a20; letter-spacing: 0.02em; }
+.hash-accent { color: #d63384; font-size: 1.5rem; margin-left: 4px; }
+.section-en { font-size: .72rem; color: #b48090; letter-spacing: .18em; margin-top: 3px; font-weight: 700; }
 .section-sub { font-size: .9rem; color: #7a5a68; margin: 0; text-align: right; grid-column: 3; }
 
+/* Intro card */
+.intro-card {
+  padding: 28px 32px;
+  background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+  border-radius: 20px;
+  border: 1px solid rgba(214, 51, 132, .15);
+  text-align: center;
+}
+.intro-badge {
+  display: inline-block;
+  padding: 8px 22px;
+  background: #d63384;
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(214, 51, 132, .3);
+}
+.intro-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #2a1a20;
+  margin: 0;
+}
+.intro-text b { color: #d63384; }
+
+/* 三、内部小标题（3.1 / 3.2 / 3.3） */
 .sub-heading {
-  display: flex; align-items: baseline; gap: 8px;
-  margin: 22px 0 10px; padding-left: 12px;
+  display: flex; align-items: baseline; gap: 10px;
+  margin: 26px 0 12px; padding-left: 14px;
   border-left: 4px solid #f5b800;
-  font-size: 1.05rem; font-weight: 800; color: #2a1a20; line-height: 1.35;
+  font-size: 1.1rem; font-weight: 800; color: #2a1a20; line-height: 1.35;
 }
 .sub-heading-num { color: #d63384; font-weight: 900; }
 
+/* 参与方式 rules */
 .rule-list { display: flex; flex-direction: column; gap: 10px; }
 .rule-item {
   display: flex; align-items: flex-start; gap: 16px;
@@ -515,7 +510,6 @@ function fallback(text: string, done: () => void) {
   background: linear-gradient(90deg, #ffe4ec, #ffd4e5); border-color: #d63384;
   transform: translateY(-1px); box-shadow: 0 4px 12px rgba(255, 107, 157, .25);
 }
-.copy-hashtags:active { transform: translateY(0); }
 
 .hot-banner {
   max-width: 980px; margin: 16px auto; padding: 16px 22px;
@@ -528,36 +522,7 @@ function fallback(text: string, done: () => void) {
 .hot-icon { font-size: 1.5rem; filter: drop-shadow(0 2px 4px rgba(255, 45, 130, .55)); }
 .hot-text { flex: 1; }
 
-.pattern-tabs { display: flex; gap: 10px; margin-bottom: 16px; }
-.pattern-tab { padding: 6px 16px; background: rgba(255, 107, 157, .12); color: #d63384; border: 1px solid #ffc9dc; border-radius: 999px; font-size: .85rem; font-weight: 700; }
-.pattern-tab.active { background: #d63384; color: #fff; border-color: transparent; }
-
-.pattern-card {
-  display: grid; grid-template-columns: 1fr 1.1fr; gap: 22px;
-  padding: 20px; background: rgba(255, 250, 253, .65);
-  border-radius: 20px; border: 1px solid rgba(214, 51, 132, .1);
-}
-.pattern-visual {
-  background: linear-gradient(135deg, #fff, #fff5f8);
-  border: 1px dashed #ffb3c6; border-radius: 16px;
-  overflow: hidden; min-height: 200px;
-  display: flex; align-items: center; justify-content: center;
-}
-.pattern-visual-img { max-width: 100%; max-height: 320px; display: block; }
-
-.pattern-steps { list-style: none; padding: 0; margin: 0; }
-.pattern-steps li { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px dashed rgba(214, 51, 132, .1); }
-.pattern-steps li:last-child { border-bottom: none; }
-.step-num {
-  flex: 0 0 28px; height: 28px; background: #2a1a20; color: #fff; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .82rem;
-}
-.pattern-steps h5 { margin: 0 0 4px; font-size: 1rem; color: #2a1a20; font-weight: 700; }
-.pattern-steps p { margin: 0; font-size: .88rem; color: #4a3540; line-height: 1.6; }
-.pattern-steps b { color: #d63384; }
-.pattern-footer { margin: 16px 0 8px; text-align: center; }
-.footer-hint { font-size: .82rem; color: #7a5a68; }
-
+/* notes grid */
 .notes-row-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
 .notes-row-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
 .mini-note {
@@ -571,7 +536,6 @@ function fallback(text: string, done: () => void) {
 .fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #bbb; }
 .mini-title { margin: 0; padding: 8px 10px 10px; font-size: .82rem; line-height: 1.35; color: #2a1a20; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 40px; }
 
-/* Row 1: 2 列 */
 .core-row-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .core-block {
   background: rgba(255, 240, 245, .35);
@@ -588,7 +552,6 @@ function fallback(text: string, done: () => void) {
 .core-tag-desc { font-size: .78rem; opacity: .95; }
 .core-notes-2col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 
-/* Row 2: 4 列 */
 .core-row-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .core-mini-block {
   display: flex; flex-direction: column; gap: 10px;
@@ -600,6 +563,7 @@ function fallback(text: string, done: () => void) {
 .core-tag.mini .core-tag-name { font-size: .88rem; }
 
 .other-list-v2 { margin: 12px 0; padding: 0 0 0 20px; font-size: .95rem; line-height: 1.9; color: #4a3540; }
+
 .footer-v2 { text-align: center; padding: 24px 20px; color: #7a5a68; }
 .footer-v2 p { margin: 4px 0; font-size: 1rem; font-weight: 700; }
 .footer-v2 .footer-sub { font-size: .82rem; color: #b48090; font-weight: 400; }
@@ -608,12 +572,13 @@ function fallback(text: string, done: () => void) {
   .topnav { gap: 12px; font-size: .82rem; }
   .hero-split { grid-template-columns: 1fr; padding: 30px 24px; }
   .hero-title { font-size: 2rem; }
-  .pattern-card { grid-template-columns: 1fr; }
   .core-row-2 { grid-template-columns: 1fr; }
   .core-row-4 { grid-template-columns: repeat(2, 1fr); }
   .notes-row-5 { grid-template-columns: repeat(2, 1fr); }
   .notes-row-3 { grid-template-columns: 1fr; }
   .section-head { grid-template-columns: auto 1fr; }
   .section-sub { grid-column: 1 / -1; text-align: left; }
+  .section-title { font-size: 1.35rem; }
+  .badge-num { width: 44px; height: 44px; font-size: 1.15rem; }
 }
 </style>
