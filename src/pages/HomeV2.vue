@@ -165,8 +165,8 @@
       <header class="section-head">
         <div class="head-badge"><span class="badge-num">03</span></div>
         <div class="head-title-wrap">
-          <h2 class="section-title">Core</h2>
-          <span class="section-en">03 · CORE STYLES</span>
+          <h2 class="section-title">AGCcore</h2>
+          <span class="section-en">03 · AGCCORE</span>
         </div>
         <p class="section-sub">你的自搭出街可以变成——</p>
       </header>
