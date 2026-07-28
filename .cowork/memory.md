@@ -25,6 +25,8 @@ visibility: SELF_ONLY
 ## 发布历史
 
 - **v1.0** — 2026-07-28 12:22 — 首发到 Cowork，alias=`fancore-brief`，workId=122761，deploymentId=15430
+- **v1.0.1** — 2026-07-28 12:38 — redeploy 到 Cowork，alias=`fancore-brief`，deploymentId=15430
+
 ## 元信息变更
 <!-- update_metadata 自动追加 -->
 
