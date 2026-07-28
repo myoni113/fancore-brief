@@ -31,6 +31,16 @@
              href="https://doc.weixin.qq.com/forms/ANAAyQcbAAgAaYAdwYSAHcCNxjY7m1yFf?page=1"
              target="_blank">填写返稿投流表</a>
         </div>
+        <!-- 官宣笔记——移到投流表下方 -->
+        <a class="official-inline"
+           href="https://www.xiaohongshu.com/explore/6a5624c8000000001101e173" target="_blank">
+          <div class="official-inline-cover"><img :src="officialCover" alt="官宣笔记"/></div>
+          <div class="official-inline-info">
+            <span class="official-tag">📌 官宣笔记</span>
+            <span class="official-inline-title">穿搭暗号对一下｜用一件衣服认出自己人</span>
+          </div>
+          <span class="official-inline-cta">查看 →</span>
+        </a>
       </div>
       <div class="hero-right">
         <div class="phone-mock">
@@ -41,16 +51,7 @@
       </div>
     </section>
 
-    <!-- 官宣笔记 独立卡片（挪到 Hero 下） -->
-    <a class="official-strip"
-       href="https://www.xiaohongshu.com/explore/6a5624c8000000001101e173" target="_blank">
-      <div class="official-strip-cover"><img :src="officialCover" alt="官宣笔记"/></div>
-      <div class="official-strip-info">
-        <span class="official-tag">📌 官宣笔记</span>
-        <p class="official-strip-title">穿搭暗号对一下｜用一件衣服认出自己人</p>
-      </div>
-      <span class="official-strip-cta">点击查看 →</span>
-    </a>
+    <!-- 官宣笔记已移至 Hero 内部 CTA 下方，这里不重复放 -->
 
     <!-- ────── 一、圈层简介 ────── -->
     <section id="intro" class="section">
@@ -482,7 +483,29 @@ function fallback(text: string, done: () => void) {
 .phone-cover { width: 100%; height: 100%; object-fit: cover; display: block; }
 .phone-badge { position: absolute; top: 30px; right: 8px; padding: 4px 10px; background: rgba(255, 107, 157, .95); color: #fff; border-radius: 999px; font-size: .7rem; font-weight: 700; z-index: 3; }
 
-/* 官宣笔记 strip */
+/* Hero 内嵌官宣笔记 (CTA 下方) */
+.official-inline {
+  display: flex; align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #fff5f8, #ffd4e5);
+  border: 1.5px solid #ff6b9d;
+  border-radius: 14px;
+  text-decoration: none; color: inherit;
+  transition: all .2s;
+}
+.official-inline:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(255, 107, 157, .3); }
+.official-inline-cover {
+  flex: 0 0 42px; aspect-ratio: 3 / 4;
+  border-radius: 6px; overflow: hidden; background: #f0e0e8;
+}
+.official-inline-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.official-inline-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.official-inline-title { font-size: .88rem; font-weight: 700; color: #2a1a20; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.official-inline-cta { color: #d63384; font-weight: 700; font-size: .82rem; white-space: nowrap; }
+
+/* 官宣笔记 strip （旧、不在页面使用） */
 .official-strip {
   max-width: 980px;
   margin: 0 auto 20px;
