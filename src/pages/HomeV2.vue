@@ -22,7 +22,7 @@
     <!-- Hero -->
     <section id="intro" class="hero-split">
       <div class="hero-left">
-        <span class="hero-tag">#穿搭暗号对一下 · #fancore</span>
+        <span class="hero-tag">#穿搭暗号对一下 · #自搭出街</span>
         <h1 class="hero-title">穿搭暗号<span class="accent">对一下</span></h1>
         <p class="hero-desc">
           从追的番 / 玩的游戏 / 关注的 IP 中人物角色的
