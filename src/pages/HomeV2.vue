@@ -624,7 +624,7 @@ function fallback(text: string, done: () => void) {
   text-align: center;
 }
 .copy-hashtags-wrap {
-  display: flex; justify-content: flex-end;
+  display: flex; justify-content: flex-start;
   margin-top: 6px;
 }
 .copy-hashtags:hover {
