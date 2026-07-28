@@ -195,6 +195,26 @@
         </div>
       </div>
 
+      <!-- Row 1.5: 迪士尼core + 飞天小女警core -->
+      <div class="core-row-2" style="margin-top: 20px">
+        <div v-for="core in row1bCores" :key="core.key" class="core-block">
+          <div class="core-tag" :style="{background: core.gradient, color: core.color || '#fff'}">
+            <span class="core-tag-name">{{ core.name }}</span>
+            <span class="core-tag-desc">{{ core.desc }}</span>
+          </div>
+          <div class="core-notes-2col">
+            <a v-for="n in (notes[core.key] || [])" :key="n.id"
+               :href="buildNoteUrl(n)" target="_blank" class="mini-note">
+              <div class="mini-cover">
+                <img v-if="n.cover" :src="proxied(n.cover)" :alt="clean(n.title)" loading="lazy"/>
+                <span v-else class="fallback">📖</span>
+              </div>
+              <p class="mini-title">{{ clean(n.title) }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Row 2: NANA + 鬼灭 + HxH + Kitty -->
       <h3 class="sub-heading" style="margin-top: 26px">
         <span class="sub-heading-num">2.</span> 更多 core 风格
@@ -286,10 +306,15 @@ const buildNoteUrl = (n: any) => {
   return base
 }
 
-// Row 1: JOJO + 奈奈 —— 一行 2 列，每个 2 篇
+// Row 1: JOJO + 奈奈
 const row1Cores = [
   { key: 'JOJOcore', name: 'JOJOcore', desc: 'JOJO 的奇妙冒险风格',       gradient: 'linear-gradient(135deg,#ffb3d9,#c48bd9)' },
   { key: '奈奈core', name: '奈奈core', desc: '蕾丝 + 泡泡短裤 + 小腿袜',   gradient: 'linear-gradient(135deg,#ff8fb1,#ff5c8a)' },
+]
+// Row 1b: 迪士尼 + 飞天小女警
+const row1bCores = [
+  { key: '迪士尼core',      name: '迪士尼core',      desc: '迪士尼公主 / 反派风格',   gradient: 'linear-gradient(135deg,#ffd6e0,#ffb3c6)', color: '#8a3a5c' },
+  { key: '飞天小女警core', name: '飞天小女警core', desc: '毛毛 / 花花 / 泡泡三色配',   gradient: 'linear-gradient(135deg,#c8f7d4,#ffe0eb)', color: '#3a5a2d' },
 ]
 // Row 2: NANA + 鬼灭 + HxH + Kitty —— 一行 4 列
 const row2Cores = [
