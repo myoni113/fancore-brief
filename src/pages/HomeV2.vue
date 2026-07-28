@@ -360,8 +360,14 @@ const activeCoreDef = computed(() => allCores.find(c => c.key === activeCore.val
   box-shadow: 0 4px 20px rgba(214, 51, 132, .08);
   font-size: .92rem;
   position: sticky; top: 10px; z-index: 10;
+  justify-content: center;
 }
 .topnav .brand { display: flex; align-items: center; gap: 8px; font-weight: 800; color: #d63384; margin-right: auto; }
+.topnav .cta-nav {
+  padding: 5px 16px; background: #d63384; color: #fff !important;
+  border-radius: 999px; font-weight: 700;
+  margin-left: auto;
+}
 .brand-badge {
   width: 28px; height: 28px;
   background: linear-gradient(135deg, #ff6b9d, #d63384);
@@ -371,10 +377,6 @@ const activeCoreDef = computed(() => allCores.find(c => c.key === activeCore.val
 }
 .topnav a { color: #2a1a20; text-decoration: none; transition: color .2s; }
 .topnav a:hover { color: #d63384; }
-.topnav .cta-nav {
-  padding: 5px 16px; background: #d63384; color: #fff !important;
-  border-radius: 999px; font-weight: 700;
-}
 
 /* 装饰分隔线 */
 .deco-line {
