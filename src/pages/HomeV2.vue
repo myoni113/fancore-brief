@@ -55,7 +55,7 @@
     <!-- 🔥 热点上榜 — Hero 后、章一前 -->
     <section class="hot-trend">
       <div class="hot-trend-head">
-        <span class="hot-trend-badge">🚨 目前内容热度正飞速趿升中</span>
+        <span class="hot-trend-badge">🚨 目前内容热度正飞速跃升中</span>
       </div>
       <div class="hot-trend-body">
         <div class="hot-trend-left">
