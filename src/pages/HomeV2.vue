@@ -614,9 +614,13 @@ function fallback(text: string, done: () => void) {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 20px;
-  align-items: start;
+  align-items: stretch;
 }
-.hot-trend-left, .hot-trend-right { min-width: 0; }
+.hot-trend-left, .hot-trend-right {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
 .hot-trend-caption {
   font-size: 1rem; font-weight: 800; color: #7A4574;
   margin-bottom: 12px;
@@ -626,9 +630,18 @@ function fallback(text: string, done: () => void) {
   border: 1px solid rgba(255, 184, 0, .25);
   background: #fff;
   box-shadow: 0 3px 12px rgba(0, 0, 0, .06);
-  aspect-ratio: 3 / 4;
+  /* 高度自适应右侧笔记卡（封面 3:4 + 标题 40px+padding） */
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 340px;
 }
-.hot-trend-chart img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hot-trend-chart img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; /* 只裁下部，保留顶部 */
+}
 .hot-trend-notes {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
 }
