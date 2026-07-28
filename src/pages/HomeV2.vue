@@ -144,8 +144,8 @@
         <span class="sub-heading-num">3.1</span> #AGCcore 的呈现形式？
       </h3>
 
-      <div class="rec-strip">🌟 推荐身着 AGCcore 灵感穿搭 和「二次元人物形象」同框</div>
       <p class="pattern-lead">
+        🌟 推荐身着 AGCcore 灵感穿搭 和「二次元人物形象」同框<br/>
         🌟 图文笔记同框展示，视频笔记做封面展示和开头片段同框，示例如下 👇
       </p>
 
