@@ -27,7 +27,7 @@
           以喜欢的 ta 为灵感，创作属于你的日常穿搭风格。
         </p>
         <div class="hero-cta-row">
-          <a class="btn btn-primary" href="https://www.xiaohongshu.com/publish/publish" target="_blank">进入活动页发布</a>
+          <a class="btn btn-primary" href="https://www.xiaohongshu.com/explore/6a5624c8000000001101e173" target="_blank">查看官宣笔记</a>
           <a class="btn btn-ghost"
              href="https://doc.weixin.qq.com/forms/ANAAyQcbAAgAaYAdwYSAHcCNxjY7m1yFf?page=1"
              target="_blank">填写返稿投流表</a>
